@@ -23,7 +23,7 @@ To install Firmata onto your Arduino UNO:
 4. "Done Uploading" will appear once the upload is complete.
 
 Having problems?  You may need to adjust one of the following before trying the upload process one more time:
-* Select : _Tools > Board_ and ensure that "Arduino UNO" is selected. 
+* Select : _Tools > Board_ and ensure that "Arduino UNO" is selected.
 * Select : _Tools > Serial Port_ and select another serial port.  The correct port will probably look something like  "/dev/tty.usbmodem:XXXX"
 * Check the USB Cable is connected - consider also trying a different cable.
 * You can also try pressing the Reset Button on the UNO.
@@ -36,7 +36,7 @@ To install Johnny-Five:
  1. Create a directory for all your Johnny-Five examples.  We'll call this your *johnny-five-intro root directory* from now on.
  2. Create a package called "package.json" in the above directory.
  3. Populate the "package.json" file as follows:
- 
+
         {
              "name": "johnny_five_intro",
              "version": "1.0.0"
@@ -44,7 +44,7 @@ To install Johnny-Five:
 
  4. Open a command prompt and run the following command in your *johnny-five-intro root directory* (which contains the "package.json" file) : `npm install johnny-five --save`.
 
-Your *johnny-five-intro root directory* should contains a sub-directory called _node_modules_.  This contains the Johnny-Five code and all of it's Node.js dependancies.  The "package.json" file has also been updated to include a dependancy reference to Johnny-Five, making your code portable, as running `npm install` in the same directory as a package.json file will download all the dependancies described in that file. 
+Your *johnny-five-intro root directory* should contains a sub-directory called _node_modules_.  This contains the Johnny-Five code and all of it's Node.js dependancies.  The "package.json" file has also been updated to include a dependancy reference to Johnny-Five, making your code portable, as running `npm install` in the same directory as a package.json file will download all the dependancies described in that file.
 
 Note that you have just installed Johnny-Five **locally**, which means that it will be visible to all Johnny_five programs in your *johnny-five-intro root directory*.
 
@@ -54,7 +54,7 @@ Now you are ready to interact with your Arduino UNO!
 
 1. Create a new file called "02_simple_led_blink.js"in your *johnny-five-intro root directory*.
 2. Populate this new file with the following Javascript code:
- 
+
         var five = require("johnny-five");
 
         var myBoard, myLed;
@@ -80,4 +80,4 @@ In this section you setup up the Arduino UNO to work with Johnny-Five via the Fi
 Arguably the most important part of this excercise is the introduction to the Johnny-Five DSL.  The code did the following:
 * Imported the Johnny-Five module.
 * Set up the Arduino UNO Board and waited for the Board to return a "ready" event before continuing.
-* Instansiated the LED Object (the LED connected to Pin 13 on the Arduino UNO) and provided methods for interacting with it.
+* Instantiated the LED Object (the LED connected to Pin 13 on the Arduino UNO) and provided methods for interacting with it.
