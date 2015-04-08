@@ -29,16 +29,16 @@ Having problems?  You may need to adjust one of the following before trying the 
 #### Step 2 : Install Johnny-Five ####
 
 The Node.js installation includes the npm package manager.  This can be used to download and install node modules such as Johnny-Five.
- 1. Create a directory for all your Johnny-Five examples.
- 2. Create a package called "package.json" in the above directory.
- 3. Populate the "package.json" files as follows:
-
-     {
-         "name": "johnny-five-intro",
-         "version": "1.0.0"
-     }
-    
- 4. Open a command prompt and run the following command in the directory containing the "package.json" file: `npm install johnny-five --save`.
+1. Create a directory for all your Johnny-Five examples.
+2. Create a package called "package.json" in the above directory.
+3. Populate the "package.json" files as follows:
+  ````json
+{
+  "name": "johnny-five-intro",
+  "version": "1.0.0"
+}
+  ````
+4. Open a command prompt and run the following command in the directory containing the "package.json" file: `npm install johnny-five --save`.
 
 The folder where you ran the npm command now contains a folder called _node_modules_.  This folder contains the Johnny-Five code and all of it's dependancies.  The package.json has also been updated to include a dependancy reference to Johnny-Five, making your code portable, as running `npm install` in the same directory as a package.json file will download all the dependancies described in the file. 
 
