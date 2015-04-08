@@ -6,5 +6,5 @@ Note that [solutions to all exercises can be found here](https://github.com/mark
 
 # Exercises
 
-1. 
+1. [Installation and Setup](https://github.com/markwest1972/johnny_five_intro/blob/master/excercises/01_installation_%26_setup.md).
 2. 
