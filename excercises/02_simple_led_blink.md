@@ -51,17 +51,11 @@ Now you are ready to interact with your Arduino UNO!
 2. Populate this file with the following Javascript:
 ```javascript
 var five = require("johnny-five");
-
 var myBoard, myLed;
-
 myBoard = new five.Board();
-
   myBoard.on("ready", function() {
-
     myLed = new five.Led(13);
-
     myLed.blink(500);
-
 });
 ```
 3. Save the file.
@@ -76,4 +70,4 @@ In this section you setup up the Arduino UNO to work with Johnny-Five via the Fi
 Arduably the most important part of this excercise is the introduction to the Johnny-Five DSL.  This code did the following:
 * Imported the Johnny-Five dependancy.
 * Setup the Arduino UNO Board.
-* Instandiated the LED Object and provided methods for interacting with it.
+* Instandiated the LED Object (the LED connected to Pin 13 on the Arduino UNO) and provided methods for interacting with it.
