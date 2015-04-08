@@ -37,7 +37,8 @@ The Node.js installation includes the npm package manager.  This can be used to 
 {
     "name": "johnny-five-intro",
     "version": "1.0.0"
-}```
+}
+```
 4. Open a command prompt and run the following command in the directory containing the "package.json" file: `npm install johnny-five --save`.
 
 You have just installed Johnny-Five **locally**, which means that it is only visible from within this file.
@@ -61,7 +62,8 @@ myBoard = new five.Board();
 
     myLed.blink(500);
 
-});```
+});
+```
 3. Save the file.
 4. In the command prompt, navigate to the *johnny-five-intro root directory* and run the command "node simple_LED_blink.js".  This will cause the LED next to Pin 13 on the Arduino UNO to blink at intervals of 500 milliseconds.
 5. To kill the process use Control C (on the Mac).
