@@ -22,7 +22,7 @@ As the Arduino UNO doesn't natively run Javascript we need to install Firmata.  
 4. "Done Uploading" will appear once the upload is complete.
 
 Having problems?  You may need to adjust one of the following before trying the upload process one more time:
-* Select : _Tools > Board_ and ensure that "Arduino UNO" is selected.
+* Select : _Tools > Board_ and ensure that "Arduino UNO" is selected. 
 * Select : _Tools > Serial Port_ and select another serial port.  The correct port will probably look something like  "/dev/tty.usbmodem:XXXX"
 * Press the Reset Button on the UNO.
 
