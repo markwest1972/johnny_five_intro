@@ -2,6 +2,6 @@
   "name": "johnny-five-intro",
   "version": "1.0.0",
   "dependencies": {
-    "johnny-five": "^0.8.53"
+    "johnny-five": "*"
   }
 }
