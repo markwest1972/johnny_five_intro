@@ -35,11 +35,13 @@ The Node.js installation includes the npm package manager.  This can be used to 
 3. Populate the "package.json" files as follows:
 ```json
 {
-    "name": "johnny-five-intro",
+    "name": "johnny_five_intro",
     "version": "1.0.0"
 }
 ```
 4. Open a command prompt and run the following command in the directory containing the "package.json" file: `npm install johnny-five --save`.
+
+The folder where you ran the npm command now contains a folder called _node_modules_.  This folder contains the Johnny-Five code and all of it's dependancies.  The package.json has also been updated to include a dependancy reference to Johnny-Five, making your code portable, as running `npm install` in the same directory as a package.json file will download all the dependancies described in the file. 
 
 You have just installed Johnny-Five **locally**, which means that it is only visible from within this file.
 
@@ -65,9 +67,9 @@ myBoard = new five.Board();
 
 ## Learning Summary ##
 
-In this section you setup up the Arduino UNO to work with Johnny-Five via the Firmata API.  You also installed Johnny-Five using the npm package manager.  We'll use npm install additional Node.js modules in later excercises.
+In this section you setup up the Arduino UNO to work with Johnny-Five via the Firmata API.  You also installed Johnny-Five locally (as opposed to globally) in your project using the npm package manager.  Note that we'll use npm to install additional Node.js modules in later excercises.
 
 Arduably the most important part of this excercise is the introduction to the Johnny-Five DSL.  This code did the following:
-* Imported the Johnny-Five dependancy.
+* Imported the Johnny-Five module.
 * Setup the Arduino UNO Board.
 * Instansiated the LED Object (the LED connected to Pin 13 on the Arduino UNO) and provided methods for interacting with it.
