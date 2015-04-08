@@ -5,4 +5,4 @@
 
 ## Running the examples
 
-See the relevant [exercises](https://github.com/markwest1972/johnny_five_intro/tree/master/excercises) for more information.
+See the relevant [exercises](https://github.com/markwest1972/johnny_five_intro/tree/master/exercises) for more information.
