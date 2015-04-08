@@ -1,4 +1,4 @@
-# Excercise One : Installation and Setup #
+# Exercise One : Installation and Setup #
 
 ## Summary ##
 
