@@ -1,4 +1,4 @@
-# Excercise Two : Simple LED Blink #
+# Exercise Two : Simple LED Blink #
 
 ## Summary ##
 
