@@ -26,7 +26,7 @@ Firmata API on to your Arduino UNO board.
 
 #### Step 3 : (Optionally) Install the Atom Text Editor ####
 
-The Atom Text Editor is a hackable text editor that works well for editing Javascript.  It is available for Mac, Windows and Linux.
+The Atom Text Editor is a free and hackable text editor that works well for editing Javascript and JSON (amongst other things).  It is available for Mac, Windows and Linux.
 
 If you'd like to try it out, you can download it from the [Atom Website](https://atom.io).
 
