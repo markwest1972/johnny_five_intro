@@ -2,7 +2,7 @@
 
 ## Summary ##
 
-In this excercise you will install Johnny-Five and use it to make the built in LED on the Arduino Blink on and off at a specified interval.
+In this exercise you will install Johnny-Five and use it to make the built in LED on the Arduino Blink on and off at a specified interval.
 
 ## Requirements ##
 
@@ -33,7 +33,7 @@ Having problems?  You may need to adjust one of the following before trying the 
 The Node.js installation from exercise one includes the npm package manager.  This can be used to download and install node modules both globally (for all Node.js processes on your PC) or locally (for specific Node.js applications).
 
 To install Johnny-Five:
- 1. Create a directory for all your Johnny-Five examples.  We'll call this your *johnny-five-intro root directory* from now on.
+ 1. Create a directory for all your Johnny-Five examples.  We'll call this your *johnny_five_intro root directory* from now on.
  2. Create a package called "package.json" in the above directory.
  3. Populate the "package.json" file as follows:
 
@@ -42,17 +42,17 @@ To install Johnny-Five:
              "version": "1.0.0"
         }
 
- 4. Open a command prompt and run the following command in your *johnny-five-intro root directory* (which contains the "package.json" file) : `npm install johnny-five --save`.
+ 4. Open a command prompt and run the following command in your *johnny_five_intro root directory* (which contains the "package.json" file) : `npm install johnny-five --save`.
 
-Your *johnny-five-intro root directory* should now have a sub-directory called _node_modules_.  This contains the Johnny-Five code and all of it's Node.js dependancies.  The "package.json" file has also been updated to include a dependancy reference to Johnny-Five.  This makes your code portable, as running `npm install` in the same directory as a package.json file will download all the dependancies described in that file.
+Your *johnny_five_intro root directory* should now have a sub-directory called _node_modules_.  This contains the Johnny-Five code and all of it's Node.js dependancies.  The "package.json" file has also been updated to include a dependancy reference to Johnny-Five.  This makes your code portable, as running `npm install` in the same directory as a package.json file will download all the dependancies described in that file.
 
-Note that you have just installed Johnny-Five **locally**, which means that it will be visible to all Johnny_five programs in your *johnny-five-intro root directory*.
+Note that you have just installed Johnny-Five **locally**, which means that it will be visible to all Johnny_five programs in your *johnny_five_intro root directory*.
 
 #### Step 3 : Blink Baby Blink! ####
 
 Now you are finally ready to interact with your Arduino UNO!  
 
-1. Create a new file called "02_simple_led_blink.js"in your *johnny-five-intro root directory*.
+1. Create a new file called "02_simple_led_blink.js"in your *johnny_five_intro root directory*.
 2. Populate this new file with the following Javascript code:
 
         var five = require("johnny-five");
@@ -69,7 +69,7 @@ Now you are finally ready to interact with your Arduino UNO!
 
         });
 3. Save the file.
-4. In the command prompt, navigate to your *johnny-five-intro root directory* and run the command "node simple_LED_blink.js".  This will cause the LED next to Pin 13 on the Arduino UNO to blink at intervals of 500 milliseconds.
+4. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node simple_LED_blink.js".  This will cause the LED next to Pin 13 on the Arduino UNO to blink at intervals of 500 milliseconds.
 5. To kill the process use Control C (on the Mac).
 6. Change the argument to the _myLed.blink_ statement and run the example again.
 

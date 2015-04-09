@@ -1,5 +1,5 @@
 {
-  "name": "johnny-five-intro",
+  "name": "johnny_five_intro",
   "version": "1.0.0",
   "dependencies": {
     "johnny-five": "*"
