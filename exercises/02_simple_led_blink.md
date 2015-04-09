@@ -69,7 +69,8 @@ Now you are finally ready to interact with your Arduino UNO!
 
         });
 3. Save the file.
-4. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node simple_LED_blink.js".  This will cause the LED next to Pin 13 on the Arduino UNO to blink at intervals of 500 milliseconds.
+4. Make sure your Arduino UNO is connected to your PC.
+5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 02_simple_led_blink.js".  This will cause the LED next to Pin 13 on the Arduino UNO to blink at intervals of 500 milliseconds.
 5. To kill the process use Control C (on the Mac).
 6. Change the argument to the _myLed.blink_ statement and run the example again.
 
