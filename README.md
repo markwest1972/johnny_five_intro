@@ -6,7 +6,7 @@ Note that [solutions to all exercises can be found here](https://github.com/mark
 
 ## Exercises
 
-#### [1. Installation and Setup](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/01_installation_%26_setup.md)
+#### [1. Installation and Setup](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/01_installation_and_setup.md)
 
 In this excercise you will install node.js, the Arduino IDE and optionally the Atom text editor.
 
