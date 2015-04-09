@@ -20,7 +20,7 @@ In this exercise you will use Johnny-Five to dim and brighten the LED by using a
 
 #### Step 1 : Wire up the Components ####
 
-This diagram (called a Fritzing) shows how you should wire up your circuit.  The Fritzing tool is free for download.
+This diagram (called a Fritzing) shows how you should wire up your circuit.  The Fritzing tool is [available for download here](http://fritzing.org/download/).
 
 ![Wiring Diagram](https://github.com/markwest1972/johnny_five_intro/blob/master/fritzings/03_led_and_button.png)
 
