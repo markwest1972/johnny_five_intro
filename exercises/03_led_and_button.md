@@ -22,7 +22,7 @@ In this exercise you will use Johnny-Five to toggle and LED on and off using a B
 
 This diagram (called a Fritzing) shows how you should wire up your circuit.  The Fritzing tool is free for download.
 
-<< FRITZING >>
+
 
 Note the usage of resistors in this circuit:
 * The *330 ohm resistor* prevents the LED from being burnt out.
@@ -32,19 +32,29 @@ Note the usage of resistors in this circuit:
 
 1. Create a new file called "03_led_&_button.js"in your *johnny_five_intro root directory*.
 2. Populate this new file with the following Javascript code:
-
         var five = require("johnny-five");
-
         var myBoard, myLed, myButton;
 
         myBoard = new five.Board();
 
         myBoard.on("ready", function() {
 
-            // Do some crazy shit!
-            this.repl.inject({
-              replLed: myLed
-            });
+          myLed = new five.Led(9);
+
+          myButton = new five.Button(4)
+
+          myButton.on("up", function(value){
+            myLed.fadeOut();
+          });
+
+          myButton.on("down", function(value){
+            myLed.fadeIn();
+          });
+
+          this.repl.inject({
+            replLed: myLed
+          });
+
         });
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
@@ -58,7 +68,7 @@ Let's take another look at the code you just ran, specifically the `this.repl.in
 
 1. Run your "03_led_and_button.js" file as specified in Step 2.
 2. Once the Node.js process is running, hit return to access REPL mode.
-3. Try switching the LED on and off from the command line by typing `replLed.on()` and `replLed.off()` respectively.
+3. Try switching the LED on and off from the command line by using `replLed.toggle()`.
 4. Take a look at the [Johnny-Five documentation for the LED class](https://github.com/rwaldron/johnny-five/wiki/Led).  Here you'll find plenty of methods for controlling the LED.  Try some of these out!
 5. To kill the process use Control C (on the Mac).
 
@@ -67,3 +77,11 @@ Let's take another look at the code you just ran, specifically the `this.repl.in
 In this section you learned how to wire up external components to the Arduino UNO.  You learned about the need for using resistors and why Fritzing diagrams are useful.
 
 You also learned more about the various methods supported by the LED Class, the location of the Johnny-Five documentation, and how to use the Johnny-Five REPL.
+
+In this example the code did the following:
+* Imported the Johnny-Five module.
+* Set up the Arduino UNO Board and waited for the Board to return a "ready" event before continuing.
+* Instantiated the LED Object (connected to Pin 9 on the Arduino UNO).
+* Instantiated the Button Object (connected to Pin 4 on the Arduino UNO).
+* On events from the Button (press and release), triggered the fadeIn and fadeOut commands on the LED.
+* Added the LED to the Johnny-Five REPL.
