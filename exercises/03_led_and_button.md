@@ -22,7 +22,7 @@ In this exercise you will use Johnny-Five to toggle and LED on and off using a B
 
 This diagram (called a Fritzing) shows how you should wire up your circuit.  The Fritzing tool is free for download.
 
-
+![Wiring Diagram](https://github.com/markwest1972/johnny_five_intro/blob/master/fritzings/03_led_and_button.png)
 
 Note the usage of resistors in this circuit:
 * The *330 ohm resistor* prevents the LED from being burnt out.
