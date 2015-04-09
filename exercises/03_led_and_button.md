@@ -2,7 +2,7 @@
 
 ## Summary ##
 
-In this exercise you will use Johnny-Five to toggle and LED on and off using a Button.  In addition you will learn about how you can use the Johnny-Five REPL.
+In this exercise you will use Johnny-Five to dim and brighten the LED by using a Button. In addition you will learn about how you can use the Johnny-Five REPL.
 
 ## Requirements ##
 
