@@ -35,7 +35,6 @@ We'll explain more about this in the learning summary.
 
 1. Create a new file called "04_potentiometer_led_and_servo.js"in your *johnny_five_intro root directory*.
 2. Populate this new file with the following Javascript code:
-
         var five = require("johnny-five");
         var myBoard, myServo, myPotentiometer;
 
