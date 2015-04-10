@@ -32,6 +32,7 @@ Note the usage of resistors in this circuit:
 
 1. Create a new file called "03_led_and_button.js"in your *johnny_five_intro root directory*.
 2. Populate this new file with the following Javascript code:
+
         var five = require("johnny-five");
         var myBoard, myLed, myButton;
 
@@ -56,6 +57,7 @@ Note the usage of resistors in this circuit:
           });
 
         });
+
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
 5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 03_led_and_button.js".
