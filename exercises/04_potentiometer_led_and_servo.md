@@ -94,4 +94,4 @@ In this example the code did the following:
 * On events from the Potentiometer:
     * ..the LED was brightened or dimmed accordingly.  
     * ..the 10 bit input value (provided by the Potentiometer) was mapped to the range of movement supported by the Servo (180 degrees) and the Servo moved to reflect this.
-* Added the LED to the Johnny-Five REPL.
+* Finally the code added the Servo and LED to the Johnny-Five REPL.
