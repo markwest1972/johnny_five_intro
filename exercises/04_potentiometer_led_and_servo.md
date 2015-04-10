@@ -24,7 +24,7 @@ This diagram (called a Fritzing) shows how you should wire up your circuit.  The
 
 ![Wiring Diagram](https://github.com/markwest1972/johnny_five_intro/blob/master/fritzings/04_potentiometer_led_and_servo.png)
 
-Note that the Potentiometer is wired up to one of the Arduino UNO's analog Pins, while the LED and Servo are wired to the UNO's Digital PWM Pins.
+Note that the Potentiometer is wired up to one of the Arduino UNO's Analog Pins, while the LED and Servo are wired to the UNO's Digital PWM Pins.
 * _Analog Pins_ let you read/write analog values with 10 bits of resolution (i.e. 1024 different values).  
 * _Digital Pins_ allow read/write of 0 or 5 volts, bascially off or on.
 * _Digital PWM Pins_ provide 8 bits of resolution (i.e. 256 different values).  This is done by switching the Pin on and off at different speeds.
@@ -35,6 +35,7 @@ We'll explain more about this in the learning summary.
 
 1. Create a new file called "04_potentiometer_led_and_servo.js"in your *johnny_five_intro root directory*.
 2. Populate this new file with the following Javascript code:
+
         var five = require("johnny-five");
         var myBoard, myServo, myPotentiometer;
 
