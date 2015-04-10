@@ -61,7 +61,8 @@ We'll explain more about this in the learning summary.
               servo: myServo,
               led: myLed
            });
-       });
+        });
+
 
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
