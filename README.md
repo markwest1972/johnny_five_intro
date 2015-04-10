@@ -17,3 +17,7 @@ In this exercise you will install Johnny-Five and use it to make the built in LE
 #### [3. Controlling an LED with a Button](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/03_led_and_button.md)
 
 In this exercise you will use Johnny-Five to dim and brighten the LED by using a Button.  In addition you will learn about how you can use the Johnny-Five REPL.
+
+#### [4. Controlling an LED and Servo with a Potentiometer](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/04_potentiometer_led_and_servo.md)
+
+TODO
