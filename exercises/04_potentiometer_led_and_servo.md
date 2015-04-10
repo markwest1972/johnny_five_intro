@@ -61,7 +61,7 @@ We'll explain more about this in the learning summary.
               servo: myServo,
               led: myLed
            });
-        });
+           });
 
 
 3. Save the file.
