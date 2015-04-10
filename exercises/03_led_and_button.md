@@ -2,7 +2,7 @@
 
 ## Summary ##
 
-In this exercise you will use Johnny-Five to dim and brighten the LED by using a Button. In addition you will learn about how you can use the Johnny-Five REPL.
+In this exercise you will use Johnny-Five to dim and brighten the LED (output) by using a Button (input). In addition you will learn about how you can use the Johnny-Five REPL.
 
 ## Requirements ##
 
@@ -30,7 +30,7 @@ Note the usage of resistors in this circuit:
 
 #### Step 2 : Running the Code ####
 
-1. Create a new file called "03_led_&_button.js"in your *johnny_five_intro root directory*.
+1. Create a new file called "03_led_and_button.js"in your *johnny_five_intro root directory*.
 2. Populate this new file with the following Javascript code:
         var five = require("johnny-five");
         var myBoard, myLed, myButton;
@@ -39,7 +39,7 @@ Note the usage of resistors in this circuit:
 
         myBoard.on("ready", function() {
 
-          myLed = new five.Led(9);
+          myLed = new five.Led(11);
 
           myButton = new five.Button(4)
 
@@ -81,7 +81,7 @@ You also learned more about the various methods supported by the LED Class, the 
 In this example the code did the following:
 * Imported the Johnny-Five module.
 * Set up the Arduino UNO Board and waited for the Board to return a "ready" event before continuing.
-* Instantiated the LED Object (connected to Pin 9 on the Arduino UNO).
+* Instantiated the LED Object (connected to Pin 11 on the Arduino UNO).
 * Instantiated the Button Object (connected to Pin 4 on the Arduino UNO).
 * On events from the Button (press and release), triggered the fadeIn and fadeOut commands on the LED.
 * Added the LED to the Johnny-Five REPL.

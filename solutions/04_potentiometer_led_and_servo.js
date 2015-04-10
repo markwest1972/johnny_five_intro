@@ -24,13 +24,3 @@ myBoard.on("ready", function() {
     led: myLed
   });
 });
-
-/**
-Potentiometer
-- why analog?  The analog pins let you read/write analog values - basically, instead of giving out a voltage of 0 or 5 (as with digital), they can give a range of voltages between 0 and 5 (both as input and output).  10 bits of resolution (i.e. 1024 different values.
-- why freq?  The frequency in ms of data events. Defaults to 25ms.
-
-Servo
-- why PWM?  This allows digital pins to switch on and off quickly, simulating the effect of analog write.  8 bits of resolution, or 255 different values
-
-*/

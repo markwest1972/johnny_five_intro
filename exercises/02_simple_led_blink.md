@@ -2,7 +2,7 @@
 
 ## Summary ##
 
-In this exercise you will install Johnny-Five and use it to make the built in LED on the Arduino Blink on and off at a specified interval.
+In this exercise you will install Johnny-Five and use it to make the built in LED (output) on the Arduino Blink on and off at a specified interval.
 
 ## Requirements ##
 
