@@ -35,6 +35,7 @@ We'll explain more about this in the learning summary.
 
 1. Create a new file called "04_potentiometer_led_and_servo.js"in your *johnny_five_intro root directory*.
 2. Populate this new file with the following Javascript code:
+
         var five = require("johnny-five");
         var myBoard, myServo, myPotentiometer;
 
@@ -61,6 +62,7 @@ We'll explain more about this in the learning summary.
               led: myLed
            });
        });
+
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
 5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 04_potentiometer_led_and_servo.js".
