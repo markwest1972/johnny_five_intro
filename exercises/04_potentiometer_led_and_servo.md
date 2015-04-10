@@ -35,31 +35,31 @@ We'll explain more about this in the learning summary.
 
 1. Create a new file called "04_potentiometer_led_and_servo.js"in your *johnny_five_intro root directory*.
 2. Populate this new file with the following Javascript code:
-       var five = require("johnny-five");
-       var myBoard, myServo, myPotentiometer;
+        var five = require("johnny-five");
+        var myBoard, myServo, myPotentiometer;
 
-       myBoard = new five.Board();
-       myBoard.on("ready", function() {
+        myBoard = new five.Board();
+        myBoard.on("ready", function() {
 
-         myServo = new five.Servo(5);
+           myServo = new five.Servo(5);
 
-         myLed = new five.Led(11);
+           myLed = new five.Led(11);
 
-         myPotentiometer = new five.Sensor({
-            pin: "A0",
-            freq: 250
-         });
+           myPotentiometer = new five.Sensor({
+              pin: "A0",
+              freq: 250
+           });
 
-         myPotentiometer.on("read", function() {
-            var rawValue = this.raw;
-            myLed.brightness(Math.floor(rawValue / 4));
-            myServo.to(five.Fn.map(rawValue, 0, 1023, 0, 179));
-         });
+           myPotentiometer.on("read", function() {
+              var rawValue = this.raw;
+              myLed.brightness(Math.floor(rawValue / 4));
+              myServo.to(five.Fn.map(rawValue, 0, 1023, 0, 179));
+           });
 
-         myBoard.repl.inject({
-            servo: myServo,
-            led: myLed
-         });
+           myBoard.repl.inject({
+              servo: myServo,
+              led: myLed
+           });
        });
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
