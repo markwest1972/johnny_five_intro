@@ -36,6 +36,7 @@ To install Johnny-Five:
  1. Create a directory for all your Johnny-Five examples.  We'll call this your *johnny_five_intro root directory* from now on.
  2. Create a package called "package.json" in the above directory.
  3. Populate the "package.json" file as follows:
+
         {
              "name": "johnny_five_intro",
              "version": "1.0.0"
