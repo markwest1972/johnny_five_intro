@@ -42,9 +42,9 @@ We'll explain more about this in the learning summary.
         myBoard = new five.Board();
         myBoard.on("ready", function() {
 
-           myServo = new five.Servo(5);
+           myServo = new five.Servo(11);
 
-           myLed = new five.Led(11);
+           myLed = new five.Led(4);
 
            myPotentiometer = new five.Sensor({
               pin: "A0",
@@ -87,8 +87,8 @@ You also learned about the various Pin types provided by the Arduino UNO.  These
 In this example the code did the following:
 * Imported the Johnny-Five module.
 * Set up the Arduino UNO Board and waited for the Board to return a "ready" event before continuing.
-* Instantiated the Servo Object (connected to the Digital PWM Pin 5 on the Arduino UNO).  The 256 different output values supported by the PWM Pin tell the Servo to move to a variety of positions.
-* Instantiated the LED Object (connected to the Digital PWM Pin 11 on the Arduino UNO).  The 256 different values supported by the PWM Pin will make LED light up with different intensities.
+* Instantiated the Servo Object (connected to the Digital PWM Pin 11 on the Arduino UNO).  The 256 different output values supported by the PWM Pin tell the Servo to move to a variety of positions.
+* Instantiated the LED Object (connected to the Digital PWM Pin 4 on the Arduino UNO).  The 256 different values supported by the PWM Pin will make LED light up with different intensities.
 * Instantiated a Sensor Object to represent the Potentiomenter (connected to the Analog Pin "A0" on the Arduino UNO).  This allows for a range of inputs from 0 to 1024, depending on the position of the Potentiomenter.
     * Note that the 'freq' parameter refers to how often the Sensor will be read.
 * On events from the Potentiometer:
