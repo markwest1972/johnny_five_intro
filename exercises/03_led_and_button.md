@@ -59,7 +59,7 @@ Note the usage of resistors in this circuit:
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
 5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 03_led_and_button.js".
-6. Experiment with switching the LED on and off with the Button.  The light fades in and out due to the fadeIn and fadeOut methods being triggered.  
+6. Experiment with switching the LED on and off with the Button.  Hold the Button down and the light becomes brighter.  Release the Button and the light fades.  The brightening and dimming of the light is controlled by the LED class's fadeIn and fadeOut methods.  
 7. To kill the process use Control C (on the Mac).
 
 #### Step 3 : Experimenting with the REPL ####
