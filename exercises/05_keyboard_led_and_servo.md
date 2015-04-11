@@ -67,7 +67,7 @@ This is where the Node.js comes in handy!  The [keypress Node.js module](https:/
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
 5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 05_keyboard_led_and_servo.js".
-6. Use the "+" and "-" keys to control the brightness of the LED.  Use the "l" and "r" keys to move the Servo left and right.  Finally use the "s" key to centre the Servo.
+6. Use the "+" and "-" keys to control the brightness of the LED.  Use the "l" and "r" keys to move the Servo left and right.  Finally use the "c" key to centre the Servo.
 7. To kill the process use Control C (on the Mac).
 
 ## Learning Summary ##
