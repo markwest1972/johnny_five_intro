@@ -2,7 +2,7 @@
 
 ## Summary ##
 
-In this exercise you will learn how you can utilise other Node.js modules in your Johnny-Five project.  By adding adding the [keypress Node.js module](https://www.npmjs.com/package/keypress) we'll be able to control a Servo and LED using the keyboard.
+In this exercise you will learn how you can utilise other Node.js modules in your Johnny-Five project.  By adding the [keypress Node.js module](https://www.npmjs.com/package/keypress) we'll be able to control a Servo and LED using the keyboard.
 
 ## Requirements ##
 
