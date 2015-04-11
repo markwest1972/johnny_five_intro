@@ -24,7 +24,7 @@ This diagram (called a Fritzing) shows how you should wire up your circuit.  The
 
 ![Wiring Diagram](https://github.com/markwest1972/johnny_five_intro/blob/master/fritzings/04_potentiometer_led_and_servo.png)
 
-Note that the Potentiometer is wired up to one of the Arduino UNO's Analog Pins, while the LED and Servo are wired to the UNO's Digital PWM Pins.
+Note that the Potentiometer is wired up to one of the Arduino UNO's Analog Pins, while the LED and Servo are wired to two of the UNO's Digital PWM Pins.
 * _Analog Pins_ let you read/write analog values with 10 bits of resolution (i.e. 1024 different values).  
 * _Digital Pins_ allow read/write of boolean values, basically off or on.
 * _Digital PWM Pins_ provide 8 bits of resolution (i.e. 256 different values).  This is done by switching the Pin on and off at different speeds.
