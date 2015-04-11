@@ -15,7 +15,7 @@ In this exercise you will install Node.js, the Arduino IDE and optionally the At
 
 [Download the latest version of Node.js](https://nodejs.org) and install it on your machine.  
 
-If you are feeling adventurous you could instead download io.js, which is a fork of Node.js.  I can't guarantee that everything will work though.
+If you are feeling adventurous you could instead download io.js, which is a fork of Node.js.  At the time of writing I haven't tested io.js with Johnny-Five, so cannot guarantee that this will work.
 
 #### Step 2 : Install the Arduino IDE ####
 
