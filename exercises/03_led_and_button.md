@@ -74,14 +74,14 @@ Let's take another look at the code you just ran, specifically the `this.repl.in
 
 ## Learning Summary ##
 
-In this section you learned how to wire up external components to the Arduino UNO.  You learned about the need for using resistors and why Fritzing diagrams are useful.
+In this section you learned how to wire up external components to the Arduino UNO.  You learned some use cases for including resistors in your circuit and finally learned about Fritzing diagrams.
 
 You also learned more about the various methods supported by the LED Class, the location of the Johnny-Five documentation, and how to use the Johnny-Five REPL.
 
 In this example the code did the following:
-* Imported the Johnny-Five module.
-* Set up the Arduino UNO Board and waited for the Board to return a "ready" event before continuing.
-* Instantiated the LED Object (connected to Pin 11 on the Arduino UNO).
-* Instantiated the Button Object (connected to Pin 4 on the Arduino UNO).
-* On events from the Button (press and release), triggered the fadeIn and fadeOut commands on the LED.
-* Added the LED to the Johnny-Five REPL.
+ * Imported the Johnny-Five module.
+ * Set up the Arduino UNO Board and waited for the Board to return a "ready" event before continuing.
+ * Instantiated the LED Object (connected to Pin 11 on the Arduino UNO).
+ * Instantiated the Button Object (connected to Pin 4 on the Arduino UNO).
+ * On events from the Button (press and release), triggered the fadeIn and fadeOut commands on the LED.
+ * Added the LED to the Johnny-Five REPL.
