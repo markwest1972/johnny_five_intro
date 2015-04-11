@@ -2,7 +2,7 @@
 
 ## Summary ##
 
-In this exercise you will install node.js, the Arduino IDE and optionally the Atom text editor.
+In this exercise you will install Node.js, the Arduino IDE and optionally the Atom text editor.
 
 ## Requirements ##
 
