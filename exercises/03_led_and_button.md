@@ -30,7 +30,7 @@ Note the usage of resistors in this circuit:
 
 #### Step 2 : Running the Code ####
 
-1. Create a new file called "03_led_and_button.js"in your *johnny_five_intro root directory*.
+1. Create a new file called "03_led_and_button.js" in your *johnny_five_intro root directory*.
 2. Populate this new file with the following Javascript code:
 
         var five = require("johnny-five");
