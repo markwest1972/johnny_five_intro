@@ -36,12 +36,10 @@ To install Johnny-Five:
  1. Create a directory for all your Johnny-Five examples.  We'll call this your *johnny_five_intro root directory* from now on.
  2. Create a package called "package.json" in the above directory.
  3. Populate the "package.json" file as follows:
-
         {
              "name": "johnny_five_intro",
              "version": "1.0.0"
         }
-
  4. Open a command prompt and run the following command in your *johnny_five_intro root directory* (which contains the "package.json" file) : `npm install johnny-five --save`.
 
 Your *johnny_five_intro root directory* should now have a sub-directory called _node_modules_.  This contains the Johnny-Five code and all of it's Node.js dependancies.  The "package.json" file has also been updated to include a dependancy reference to Johnny-Five.  This makes your code portable, as running `npm install` in the same directory as a package.json file will download all the dependancies described in that file.
