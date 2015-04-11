@@ -20,7 +20,7 @@ To install Firmata onto your Arduino UNO:
  1. Connect the Arduino UNO to your PC using the USB Cable
  2. Open the Arduino IDE, select: _File > Examples > Firmata > StandardFirmata_
  3. Click the "Upload" button.
- 4. "Done Uploading" will appear once the upload is complete.
+ 4. The text "Done Uploading" will appear once the upload is complete.
 
 Having problems?  You may need to adjust one of the following before trying the upload process one more time:
 * Select : _Tools > Board_ and ensure that "Arduino UNO" is selected.
