@@ -30,7 +30,7 @@ Having problems?  You may need to adjust one of the following before trying the 
 
 #### Step 2 : Install Johnny-Five ####
 
-The Node.js installation from exercise one includes the npm package manager.  This can be used to download and install node modules both globally (for all Node.js processes on your PC) or locally (for specific Node.js applications).
+The Node.js installation from exercise one includes the [npm package manager](https://www.npmjs.com).  This can be used to download and install node modules both globally (for all Node.js processes on your PC) or locally (for specific Node.js applications).
 
 To install Johnny-Five:
  1. Create a directory for all your Johnny-Five examples.  We'll call this your *johnny_five_intro root directory* from now on.
