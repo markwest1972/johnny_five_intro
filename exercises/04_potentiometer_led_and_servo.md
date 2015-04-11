@@ -2,7 +2,7 @@
 
 ## Summary ##
 
-In this exercise you will expand your experience of  Johnny-Five by using a Potentiometer (input) to control a Servo (output) and LED (output).  You'll also learn more about the different types of Pin provided by the Arduino UNO.
+In this exercise you will expand your experience of  Johnny-Five by using a Potentiometer (input) to control both a Servo (output) and an LED (output).  You'll also learn more about the different types of Pin provided by the Arduino UNO.
 
 ## Requirements ##
 
