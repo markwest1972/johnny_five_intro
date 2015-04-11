@@ -17,10 +17,10 @@ In this exercise you will install Johnny-Five and use it to make the built in LE
 As the Arduino UNO doesn't natively run Javascript we need to install Firmata on it.  Firmata provides an API that Javascript (via Johnny-Five) uses to control the Arduino UNO over a serial connection.  In this case we'll use a USB Cable for the serial connection, although it is also possible to use Bluetooth or WIFI (this requires additional hardware).
 
 To install Firmata onto your Arduino UNO:
-1. Connect the Arduino UNO to your PC using the USB Cable
-2. Open the Arduino IDE, select: _File > Examples > Firmata > StandardFirmata_
-3. Click the "Upload" button.
-4. "Done Uploading" will appear once the upload is complete.
+ 1. Connect the Arduino UNO to your PC using the USB Cable
+ 2. Open the Arduino IDE, select: _File > Examples > Firmata > StandardFirmata_
+ 3. Click the "Upload" button.
+ 4. "Done Uploading" will appear once the upload is complete.
 
 Having problems?  You may need to adjust one of the following before trying the upload process one more time:
 * Select : _Tools > Board_ and ensure that "Arduino UNO" is selected.
