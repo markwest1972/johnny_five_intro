@@ -51,7 +51,7 @@ Note that you have just installed Johnny-Five **locally**, which means that it w
 
 Now you are finally ready to interact with your Arduino UNO!  
 
-1. Create a new file called "02_simple_led_blink.js"in your *johnny_five_intro root directory*.
+1. Create a new file called "02_simple_led_blink.js" in your *johnny_five_intro root directory*.
 2. Populate this new file with the following Javascript code:
 
         var five = require("johnny-five");
