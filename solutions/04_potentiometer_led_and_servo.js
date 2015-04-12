@@ -6,7 +6,7 @@ myBoard.on("ready", function() {
 
   myServo = new five.Servo(11);
 
-  myLed = new five.Led(4);
+  myLed = new five.Led(5);
 
   myPotentiometer = new five.Sensor({
     pin: "A0",

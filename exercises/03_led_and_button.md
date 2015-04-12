@@ -39,7 +39,7 @@ Note the usage of resistors in this circuit:
 
         myBoard.on("ready", function() {
 
-          myLed = new five.Led(4);
+          myLed = new five.Led(5);
 
           myButton = new five.Button(11)
 
@@ -81,7 +81,7 @@ You also learned more about the various methods supported by the LED Class, the 
 In this example the code did the following:
  * Imported the Johnny-Five module.
  * Set up the Arduino UNO Board and waited for the Board to return a "ready" event before continuing.
- * Instantiated the LED Object (connected to Pin 4 on the Arduino UNO).
+ * Instantiated the LED Object (connected to Pin 5 on the Arduino UNO).
  * Instantiated the Button Object (connected to Pin 11 on the Arduino UNO).
  * On events from the Button (press and release), triggered the fadeIn and fadeOut commands on the LED.
  * Added the LED to the Johnny-Five REPL.

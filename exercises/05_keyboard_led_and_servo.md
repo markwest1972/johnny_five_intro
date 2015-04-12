@@ -41,6 +41,7 @@ This is where the Node.js comes in handy!  The [keypress Node.js module](https:/
         var five = require("johnny-five");
         var keypress = require("keypress");
         var myBoard, myServo;
+        var brightness = 0;
 
         keypress(process.stdin);
         myBoard = new five.Board();
@@ -48,22 +49,75 @@ This is where the Node.js comes in handy!  The [keypress Node.js module](https:/
 
            myServo = new five.Servo(11);
 
-           myLed = new five.Led(4);
+           myLed = new five.Led(5);
+
+           myLed.brightness(brightness);
 
            process.stdin.resume();
            process.stdin.setEncoding("utf8");
            process.stdin.setRawMode(true);
 
            process.stdin.on("keypress", function(ch, key) {
-              if (!key) {
-                return;
+
+              if ( key.name === 'left' ) {
+                console.log('...Moving Servo Left');
+                adjustServo(10);
               }
 
-              // Code to control the LED and Servo (+, -, l, r and c)
+              if ( key.name === 'right' ) {
+                console.log('...Moving Servo Right');
+                adjustServo(-10);
+              }
 
+              if ( key.name === 'space' ) {
+                console.log('...Centering Servo');
+                myServo.center();
+              }
+
+              if ( key.name === 'up' ) {
+                adjustLedBrightness(20);
+              }
+
+              if ( key.name === 'down' ) {
+                adjustLedBrightness(-20);
+              }
            });
-
          });
+
+         function adjustLedBrightness(adjustment){
+
+           brightness += adjustment;
+
+           if (brightness <= 0) {
+             console.log('...LED cannot be dimmed futher');
+             brightness = 0;
+           }else if (brightness >= 255) {
+             console.log('...LED cannot be brightened futher');
+             brightness = 255;
+           }else{
+             console.log('...Adjusting LED to ['+brightness+']');
+           }
+
+           myLed.brightness(brightness);
+         }
+
+         function adjustServo(adjustment){
+
+           myServo.position
+
+           if (myServo.position <= 0 ) {
+             console.log('...Servo cannot be moved further in that direction');
+             brightness = 0;
+           }else if (myServo.position >= 180) {
+             console.log('...Servo cannot be moved further in that direction');
+             myServo.position = 180;
+           }else{
+             console.log('...Adjusting Servo to angle ['+angle+']');
+           }
+
+           myServo.step(adjustment);
+         }
+
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
 5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 05_keyboard_led_and_servo.js".

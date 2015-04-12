@@ -5,7 +5,7 @@ myBoard = new five.Board();
 
 myBoard.on("ready", function() {
 
-  myLed = new five.Led(4);
+  myLed = new five.Led(5);
 
   myButton = new five.Button(11)
 
