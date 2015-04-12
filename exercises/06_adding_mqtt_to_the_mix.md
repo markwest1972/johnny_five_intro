@@ -32,14 +32,17 @@ This diagram (called a Fritzing) shows how you should wire up your circuit.  The
 Once again the Node.js ecosystem makes it easy to add MQTT to your project, thanks to the [MQTT module for Node.js](https://www.npmjs.com/package/mqtt)!
 
 1. Open a command prompt and run the following command in your *johnny_five_intro root directory* (which contains the "package.json" file) : `npm install mqtt --save`.
-2. Check you "package.json" file - a keypress dependancy should now have been added.
-3. The keypress module will have been locally installed under the _node_modules_ directory.
+2. Check you "package.json" file - an MQTT dependancy should now have been added.
+3. The MQTT module will have been locally installed under the _node_modules_ directory.
 
 #### Step 3 : Adding MQTT to the Johnny-Five Controller ####
 
+_coming soon_
 
+#### Step 4 : Using the Hive MQ Web Browswer MQTT Client ####
 
-#### Step 4 : Using the Hive MQ Web Browswer MQTT CLient ####
-
+_coming soon_
 
 ## Learning Summary ##
+
+_coming soon_
