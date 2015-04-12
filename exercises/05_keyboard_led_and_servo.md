@@ -120,16 +120,16 @@ This is where the Node.js comes in handy!  The [keypress Node.js module](https:/
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
 5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 05_keyboard_led_and_servo.js".
-6. Use the "+" and "-" keys to control the brightness of the LED.  Use the "l" and "r" keys to move the Servo left and right.  Finally use the "c" key to centre the Servo.
+6. Use the "up" and "down" arrow keys to control the brightness of the LED.  Use the "left" and "right" arrowkeys to move the Servo left and right.  Finally use the "pace bar to centre the Servo.
 7. To kill the process use Control C (on the Mac).
 
 ## Learning Summary ##
 
 In this section you learned how you can exploit the Node.js ecosystem to add extra functionality to your Johnny-Five project.
 
-You should by now be familar with Johnny-Five code, but as the keypress parts are new, we can review them here:
+You should by now be familar with Johnny-Five code, but there are a couple of Node specific addition to the code that we can review here:
 
-* `keypress(process.stdin);` Node's global object process has two properties called .stdin and .stdout, which are essentially streams. You can write things into the stdout and listen to the 'data' event in the stdin stream.  
+* `keypress(process.stdin);` Node's global object "process" has two properties called ".stdin" and ".stdout", which are essentially streams. You can write things into the stdout and listen to the 'data' event in the stdin stream.  Here we are setting up keypress to monitor ".stdin".  
 * `process.stdin.resume();` Initializes the stdin reading process.
 * `process.stdin.setEncoding("utf8");` Set character encoding.  
 * `process.stdin.setRawMode(true);` Fire events per keypress, not on carriage return.
