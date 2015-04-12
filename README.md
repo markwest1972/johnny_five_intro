@@ -27,3 +27,7 @@ In this exercise you will expand your experience of  Johnny-Five by using a Pote
 #### [5. Controlling an LED and Servo with a Keyboard](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/05_keyboard_led_and_servo.md)
 
 In this exercise you will learn how you can utilise other Node.js modules in your Johnny-Five project.  By adding adding the [keypress Node.js module](https://www.npmjs.com/package/keypress) we'll be able to control a Servo and LED using the keyboard.
+
+#### [6. Adding MQTT to the Mix](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/06_adding_mqtt_to_the_mix.md)
+
+The [MQTT](http://mqtt.org) is quickly becoming the defacto messaging platform for the Internet of Things, due to it's low footprint and simplicity.  In this exercise we will communicate with our Johnny-Five instance via a public MQTT Broker.
