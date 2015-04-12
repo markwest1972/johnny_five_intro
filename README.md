@@ -30,4 +30,4 @@ In this exercise you will learn how you can utilise other Node.js modules in you
 
 #### [6. Adding MQTT to the Mix](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/06_adding_mqtt_to_the_mix.md)
 
-The [MQTT](http://mqtt.org) is quickly becoming the defacto messaging platform for the Internet of Things, due to it's low footprint and simplicity.  In this exercise we will communicate with our Johnny-Five instance via a public MQTT Broker.
+[MQTT](http://mqtt.org) is quickly becoming the defacto messaging platform for the Internet of Things, due to it's low footprint and simplicity.  In this exercise we will communicate with the circuit we built in exercise 5 via Johnny-Five and a public MQTT Broker.
