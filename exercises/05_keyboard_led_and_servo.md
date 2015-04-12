@@ -27,7 +27,7 @@ This diagram (called a Fritzing) shows how you should wire up your circuit.  The
 
 #### Step 2 : Adding keypress to the Project ####
 
-This is where the Node.js comes in handy!  The [keypress Node.js module](https://www.npmjs.com/package/keypress) makes it easy to handle keypress events in your Node.js code!
+This is where the Node.js comes in handy!  The [keypress module for Node.js](https://www.npmjs.com/package/keypress) makes it easy to handle keypress events in your Node.js code!
 
 1. Open a command prompt and run the following command in your *johnny_five_intro root directory* (which contains the "package.json" file) : `npm install keypress --save`.
 2. Check you "package.json" file - a keypress dependancy should now have been added.
