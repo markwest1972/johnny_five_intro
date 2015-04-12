@@ -49,6 +49,8 @@ This is where the Node.js comes in handy!  The [keypress Node.js module](https:/
 
            myServo = new five.Servo(11);
 
+           myServo.center();
+
            myLed = new five.Led(5);
 
            myLed.brightness(brightness);
@@ -60,13 +62,13 @@ This is where the Node.js comes in handy!  The [keypress Node.js module](https:/
            process.stdin.on("keypress", function(ch, key) {
 
               if ( key.name === 'left' ) {
-                console.log('...Moving Servo Left');
-                adjustServo(10);
+                console.log('...Moving Servo Left' + myServo.position);
+                myServo.step(validateServoMove(-10, myServo.position));
               }
 
               if ( key.name === 'right' ) {
-                console.log('...Moving Servo Right');
-                adjustServo(-10);
+                console.log('...Moving Servo Right' + myServo.position);
+                myServo.step(validateServoMove(10, myServo.position));
               }
 
               if ( key.name === 'space' ) {
@@ -75,48 +77,45 @@ This is where the Node.js comes in handy!  The [keypress Node.js module](https:/
               }
 
               if ( key.name === 'up' ) {
-                adjustLedBrightness(20);
+                adjustLedBrightness(20, myServo);
               }
 
               if ( key.name === 'down' ) {
-                adjustLedBrightness(-20);
+                adjustLedBrightness(-20, myServo);
               }
            });
-         });
+        });
 
-         function adjustLedBrightness(adjustment){
+        function adjustLedBrightness(adjustment){
 
-           brightness += adjustment;
+         brightness += adjustment;
 
-           if (brightness <= 0) {
-             console.log('...LED cannot be dimmed futher');
-             brightness = 0;
-           }else if (brightness >= 255) {
-             console.log('...LED cannot be brightened futher');
-             brightness = 255;
-           }else{
-             console.log('...Adjusting LED to ['+brightness+']');
-           }
-
-           myLed.brightness(brightness);
+         if (brightness <= 0) {
+           console.log('...LED cannot be dimmed futher');
+           brightness = 0;
+         }else if (brightness >= 255) {
+           console.log('...LED cannot be brightened futher');
+           brightness = 255;
+         }else{
+           console.log('...Adjusting LED to ['+brightness+']');
          }
 
-         function adjustServo(adjustment){
+         myLed.brightness(brightness);
+        }
 
-           myServo.position
+        function validateServoMove(adjustment, position){
 
-           if (myServo.position <= 0 ) {
-             console.log('...Servo cannot be moved further in that direction');
-             brightness = 0;
-           }else if (myServo.position >= 180) {
-             console.log('...Servo cannot be moved further in that direction');
-             myServo.position = 180;
-           }else{
-             console.log('...Adjusting Servo to angle ['+angle+']');
-           }
+          var newPosition = (position + adjustment);
 
-           myServo.step(adjustment);
-         }
+          if (newPosition < 1 || newPosition > 179 ) {
+            console.log('...Servo cannot be moved further in that direction');
+            adjustment = 0;
+          }else{
+            console.log('...Adjusting Servo to angle ['+(position += adjustment)+']');
+          }
+
+          return adjustment;
+        }
 
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
@@ -128,7 +127,7 @@ This is where the Node.js comes in handy!  The [keypress Node.js module](https:/
 
 In this section you learned how you can exploit the Node.js ecosystem to add extra functionality to your Johnny-Five project.
 
-You should by now be familar with the Johnny-Five code in this example, but the keypress parts are new, so we can review them here:
+You should by now be familar with Johnny-Five code, but as the keypress parts are new, we can review them here:
 
 * `keypress(process.stdin);` Node's global object process has two properties called .stdin and .stdout, which are essentially streams. You can write things into the stdout and listen to the 'data' event in the stdin stream.  
 * `process.stdin.resume();` Initializes the stdin reading process.

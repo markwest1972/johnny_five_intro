@@ -9,6 +9,8 @@ myBoard.on("ready", function() {
 
    myServo = new five.Servo(11);
 
+   myServo.center();
+
    myLed = new five.Led(5);
 
    myLed.brightness(brightness);
@@ -20,13 +22,13 @@ myBoard.on("ready", function() {
    process.stdin.on("keypress", function(ch, key) {
 
       if ( key.name === 'left' ) {
-        console.log('...Moving Servo Left');
-        adjustServo(10);
+        console.log('...Moving Servo Left' + myServo.position);
+        myServo.step(validateServoMove(-10, myServo.position));
       }
 
       if ( key.name === 'right' ) {
-        console.log('...Moving Servo Right');
-        adjustServo(-10);
+        console.log('...Moving Servo Right' + myServo.position);
+        myServo.step(validateServoMove(10, myServo.position));
       }
 
       if ( key.name === 'space' ) {
@@ -35,45 +37,43 @@ myBoard.on("ready", function() {
       }
 
       if ( key.name === 'up' ) {
-        adjustLedBrightness(20);
+        adjustLedBrightness(20, myServo);
       }
 
       if ( key.name === 'down' ) {
-        adjustLedBrightness(-20);
+        adjustLedBrightness(-20, myServo);
       }
    });
- });
+});
 
- function adjustLedBrightness(adjustment){
+function adjustLedBrightness(adjustment){
 
-   brightness += adjustment;
+ brightness += adjustment;
 
-   if (brightness <= 0) {
-     console.log('...LED cannot be dimmed futher');
-     brightness = 0;
-   }else if (brightness >= 255) {
-     console.log('...LED cannot be brightened futher');
-     brightness = 255;
-   }else{
-     console.log('...Adjusting LED to ['+brightness+']');
-   }
-
-   myLed.brightness(brightness);
+ if (brightness <= 0) {
+   console.log('...LED cannot be dimmed futher');
+   brightness = 0;
+ }else if (brightness >= 255) {
+   console.log('...LED cannot be brightened futher');
+   brightness = 255;
+ }else{
+   console.log('...Adjusting LED to ['+brightness+']');
  }
 
- function adjustServo(adjustment){
+ myLed.brightness(brightness);
+}
 
-   myServo.position
+function validateServoMove(adjustment, position){
 
-   if (myServo.position <= 0 ) {
-     console.log('...Servo cannot be moved further in that direction');
-     brightness = 0;
-   }else if (myServo.position >= 180) {
-     console.log('...Servo cannot be moved further in that direction');
-     myServo.position = 180;
-   }else{
-     console.log('...Adjusting Servo to angle ['+angle+']');
-   }
+  var newPosition = (position + adjustment);
 
-   myServo.step(adjustment);
- }
+  if (newPosition < 1 || newPosition > 179 ) {
+    console.log('...Servo cannot be moved further in that direction');
+    adjustment = 0;
+  }else{
+    console.log('...Adjusting Servo to angle ['+(position += adjustment)+']');
+  }
+
+  return adjustment;
+
+}
