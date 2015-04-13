@@ -23,12 +23,12 @@ myBoard.on("ready", function() {
 
       if ( key.name === 'left' ) {
         console.log('...Moving Servo Left' + myServo.position);
-        myServo.step(validateServoMove(-10, myServo.position));
+        myServo.step(validateServoMove(10, myServo.position));
       }
 
       if ( key.name === 'right' ) {
         console.log('...Moving Servo Right' + myServo.position);
-        myServo.step(validateServoMove(10, myServo.position));
+        myServo.step(validateServoMove(-10, myServo.position));
       }
 
       if ( key.name === 'space' ) {
@@ -37,16 +37,16 @@ myBoard.on("ready", function() {
       }
 
       if ( key.name === 'up' ) {
-        adjustLedBrightness(20, myServo);
+        validateAndAdjustLedBrightness(20, myServo);
       }
 
       if ( key.name === 'down' ) {
-        adjustLedBrightness(-20, myServo);
+        validateAndAdjustLedBrightness(-20, myServo);
       }
    });
 });
 
-function adjustLedBrightness(adjustment){
+function validateAndAdjustLedBrightness(adjustment){
 
  brightness += adjustment;
 
@@ -75,5 +75,4 @@ function validateServoMove(adjustment, position){
   }
 
   return adjustment;
-
 }

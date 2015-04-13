@@ -63,12 +63,12 @@ This is where the Node.js comes in handy!  The [keypress module for Node.js](htt
 
               if ( key.name === 'left' ) {
                 console.log('...Moving Servo Left' + myServo.position);
-                myServo.step(validateServoMove(-10, myServo.position));
+                myServo.step(validateServoMove(10, myServo.position));
               }
 
               if ( key.name === 'right' ) {
                 console.log('...Moving Servo Right' + myServo.position);
-                myServo.step(validateServoMove(10, myServo.position));
+                myServo.step(validateServoMove(-10, myServo.position));
               }
 
               if ( key.name === 'space' ) {
@@ -77,16 +77,16 @@ This is where the Node.js comes in handy!  The [keypress module for Node.js](htt
               }
 
               if ( key.name === 'up' ) {
-                adjustLedBrightness(20, myServo);
+                validateAndAdjustLedBrightness(20, myServo);
               }
 
               if ( key.name === 'down' ) {
-                adjustLedBrightness(-20, myServo);
+                validateAndAdjustLedBrightness(-20, myServo);
               }
            });
         });
 
-        function adjustLedBrightness(adjustment){
+        function validateAndAdjustLedBrightness(adjustment){
 
          brightness += adjustment;
 
