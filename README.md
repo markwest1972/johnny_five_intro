@@ -34,4 +34,4 @@ In this exercise you will learn how you can utilise other Node.js modules in you
 
 ## Disclaimer
 
-This workshop is my attempt at creating a quick and simple Johnny-Five primer, based on my knowledge and experience with Johnny-Five, Arduino and Javascript.  I am by no means an expert with any of these, so if any feedback or suggestions are welcome.
+This workshop is my attempt at creating a quick and simple Johnny-Five primer, based on my knowledge and experience with Johnny-Five, Arduino and Javascript.  I am by no means an expert with any of these, so any feedback or suggestions for improvement are most welcome.
