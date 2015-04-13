@@ -132,7 +132,7 @@ You will now set up a Johnny-Five controller with a connection to an Public MQTT
         }
 
 3. Change the _publishTopic_ and _subscribeTopic_ to be unique (in the example I've added my initials to the topic names).  This is to avoid problems when more than one person is taking this workshop at once.
-4. Save the file.
+4. Save the file. 
 5. Make sure your Arduino UNO is connected to your PC.
 6. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 06_adding_mqtt_to_the_mix.js".
 
