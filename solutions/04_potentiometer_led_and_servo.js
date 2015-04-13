@@ -20,7 +20,7 @@ myBoard.on("ready", function() {
   });
 
   myBoard.repl.inject({
-    servo: myServo,
-    led: myLed
+    replServo: myServo,
+    replLed: myLed
   });
 });

@@ -58,8 +58,8 @@ We'll explain more about this in the learning summary.
            });
 
            myBoard.repl.inject({
-              servo: myServo,
-              led: myLed
+              replServo: myServo,
+              replLed: myLed
            });
          });
 3. Save the file.
