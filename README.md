@@ -31,3 +31,7 @@ In this exercise you will learn how you can utilise other Node.js modules in you
 #### [6. Adding MQTT to the Mix](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/06_adding_mqtt_to_the_mix.md)
 
 [MQTT](http://mqtt.org) is quickly becoming the de-facto messaging standard for the Internet of Things, due to it's small footprint and simplicity.  In this exercise we'll add an MQTT broker to our solution, making it possible to control our LED and Servo setup from an online MQTT client.
+
+## Disclaimer
+
+This workshop is my attempt at creating a quick and simple Johnny-Five primer, based on my knowledge and experience with Johnny-Five, Arduino and Javascript.  I am by no means an expert with any of these, so if any feedback or suggestions are welcome.
