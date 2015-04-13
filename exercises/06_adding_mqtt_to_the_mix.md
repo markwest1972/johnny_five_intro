@@ -4,7 +4,7 @@
 
 [MQ Telemetry Transport](http://mqtt.org) is a publish/subscribe messaging protocol, designed for constrained devices and low-bandwidth, high-latency or unreliable networks.  Due to it's small footprint it is quickly becoming the de-facto messaging standard for the Internet of Things,
 
-In this exercise we'll wire up our Johnny-Five LED and Servo example to a Public MQTT Broker.  We'll then be able use any MQTT Client to communicate with our circuit.  In this case of this exercise we'll use the [Hive MQ Web Browswer MQTT CLient](http://www.hivemq.com/demos/websocket-client/), although you are welcome to write your own client if you wish!
+In this exercise we'll wire up our Johnny-Five LED and Servo example to a Public MQTT Broker.  We'll then be able use any MQTT Client to communicate with our circuit.  For simplicitys sake we'll use the [Hive MQ Web Browser MQTT CLient](http://www.hivemq.com/demos/websocket-client/), although you are welcome to write your own client if you wish!
 
 ## Requirements ##
 
@@ -39,7 +39,7 @@ Once again the Node.js ecosystem makes it easy to add MQTT to your project, than
 
 You will now set up a Johnny-Five controller with a connection to an Public MQTT Broker.
 
-1. Create a new file called "06_adding_mqtt_to_the_mix.js"in your *johnny_five_intro root directory*.
+1. Create a new file called "06_adding_mqtt_to_the_mix.js" in your *johnny_five_intro root directory*.
 2. Populate this new file with the following Javascript code:
 
         var five = require("johnny-five");
@@ -152,6 +152,7 @@ The next step is to communicate with our Johnny-Five instance using a web based 
   - brighter
   - dimmer
 5. You should see your actuators reacting to the commands, and a response showing up in your web based MQTT Client.
+6. If you don't like these commands, or want to have seperate communication topics for the LED and Servo, feel free to update the code to reflect this!
 
 ## Learning Summary ##
 
