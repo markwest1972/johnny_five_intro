@@ -6,6 +6,8 @@ The exercises revolve mainly about using different types of sensors (input) to c
 
 Note that [solutions to all exercises can be found here](https://github.com/markwest1972/johnny_five_intro/tree/master/solutions).
 
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 ## Exercises
 
 #### [1. Installation and Setup](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/01_installation_and_setup.md)
@@ -32,6 +34,12 @@ In this exercise you will learn how you can utilise other Node.js modules in you
 
 [MQTT](http://mqtt.org) is quickly becoming the de-facto messaging standard for the Internet of Things, due to it's small footprint and simplicity.  In this exercise we'll add an MQTT broker to our solution, making it possible to control our LED and Servo setup from an online MQTT client.
 
+## Further Reading
+
+The work here draws heavily on the [Arduino Experimenter's Guide for NodeJS](http://node-ardx.org), along with the [Johnny-Five documentation](https://github.com/rwaldron/johnny-five/).
+
 ## Disclaimer
 
-This workshop is my attempt at creating a quick and simple Johnny-Five primer, based on my knowledge and experience with Johnny-Five, Arduino and Javascript.  I am by no means an expert with any of these, so any feedback or suggestions for improvement are most welcome.
+This workshop is my attempt at creating a quick and simple Johnny-Five primer, based on my limited knowledge and experience with Johnny-Five, Arduino and Javascript.  I am by no means an expert with any of these, so any feedback or suggestions for improvement are most welcome.
+
+If my code makes you want to cry, then tell me how I can make it better :)
