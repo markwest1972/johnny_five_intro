@@ -14,7 +14,7 @@ This workshop is setup to require a minimum amount of hardware:
 * A Mac, Linux or Windows machine with Node.js and the Arduino IDE installed (see [exercise one](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/01_installation_and_setup.md)).
 * 1 x Arduino UNO, flashed with Firmata (see [exercise two](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/02_simple_led_blink.md)).
 * 1 x type 2 USB Cable.
-* 1 x Breadboard.
+* 1 x Breadboard (if you've never used a breadboard then [check out this tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)).
 * 1 x Potentiometer.
 * 1 x Button.
 * 1 x Servo.
