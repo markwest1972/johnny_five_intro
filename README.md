@@ -57,6 +57,6 @@ You may also want to take a look at this book, by the people behind Johnny-Five 
 
 ## Disclaimer
 
-This workshop is my attempt at creating a quick and simple Johnny-Five primer, based on my limited knowledge and experience with Johnny-Five, Arduino and Javascript.  I am by no means an expert with any of these, so any feedback or suggestions for improvement are most welcome.
+This workshop is my attempt at creating a quick and simple Johnny-Five primer, based on my limited knowledge and experience with Johnny-Five, Arduino and Javascript.  I am by no means an expert with any of these and welcome corrections or suggestions for improvement are most welcome.
 
-If my code makes you want to cry, then tell me how I can make it better :)
+As for the code - it's been hacked together and can easily be improved.  If my code makes you want to cry, then tell me how I can make it better :)
