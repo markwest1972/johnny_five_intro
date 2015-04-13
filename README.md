@@ -53,6 +53,8 @@ In this exercise you will learn how you can utilise other Node.js modules in you
 
 The work here draws heavily on the [Arduino Experimenter's Guide for NodeJS](http://node-ardx.org), along with the [Johnny-Five documentation](https://github.com/rwaldron/johnny-five/).
 
+You may also want to take a look at [Make: JavaScript Robotics: Building NodeBots with Johnny-Five, Raspberry Pi, Arduino, and BeagleBone](http://shop.oreilly.com/product/0636920031390.do).
+
 ## Disclaimer
 
 This workshop is my attempt at creating a quick and simple Johnny-Five primer, based on my limited knowledge and experience with Johnny-Five, Arduino and Javascript.  I am by no means an expert with any of these, so any feedback or suggestions for improvement are most welcome.
