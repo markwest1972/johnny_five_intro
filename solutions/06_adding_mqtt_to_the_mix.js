@@ -1,9 +1,10 @@
 var five = require("johnny-five");
-var keypress = require("keypress");
-var myBoard, myServo;
+var mqtt = require("mqtt");
+var myBoard, myServo, myLed;
 var brightness = 0;
+var subscribeTopic = 'command_from_mwe';
+var publishTopic = 'response_to_mwe';
 
-keypress(process.stdin);
 myBoard = new five.Board();
 myBoard.on("ready", function() {
 
@@ -15,31 +16,42 @@ myBoard.on("ready", function() {
 
    myLed.brightness(brightness);
 
-   process.stdin.resume();
-   process.stdin.setEncoding("utf8");
-   process.stdin.setRawMode(true);
+   var options = { host: "test.mosca.io", port: "1883" };
 
-   process.stdin.on("keypress", function(ch, key) {
+   var client  = mqtt.connect(options);
+   client.on('connect', function () {
+     client.subscribe(subscribeTopic);
+   });
 
-      if ( key.name === 'left' ) {
+   client.on('message', function (topic, payload) {
+
+     var message = payload.toString();
+
+     console.log('Incoming message['+message+']');
+
+      if ( message === 'left' )  {
         myServo.step(validateServoMove(10, myServo.position));
+        client.publish(publishTopic, 'Servo angle ['+myServo.position+']');
       }
 
-      if ( key.name === 'right' ) {
+      if ( message === 'right' ) {
         myServo.step(validateServoMove(-10, myServo.position));
+        client.publish(publishTopic, 'Servo angle ['+myServo.position+']');
       }
 
-      if ( key.name === 'space' ) {
-        console.log('...Centering Servo');
+      if ( message === 'centre' ) {
         myServo.center();
+        client.publish(publishTopic, 'Servo angle ['+myServo.position+']');
       }
 
-      if ( key.name === 'up' ) {
+      if ( message === 'brighter' ) {
         validateAndAdjustLedBrightness(20);
+        client.publish(publishTopic, 'LED brightness ['+brightness+']');
       }
 
-      if ( key.name === 'down' ) {
+      if ( message === 'dimmer' ) {
         validateAndAdjustLedBrightness(-20);
+        client.publish(publishTopic, 'LED brightness ['+brightness+']');
       }
    });
 });
@@ -65,7 +77,7 @@ function validateServoMove(adjustment, position){
 
   var newPosition = (position + adjustment);
 
-  if (newPosition < 1 || newPosition > 179 ) {
+  if (newPosition < 0 || newPosition > 180 ) {
     console.log('...Servo cannot be moved further in that direction');
     adjustment = 0;
   }else{
