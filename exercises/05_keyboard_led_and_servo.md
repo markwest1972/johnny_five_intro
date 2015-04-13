@@ -127,7 +127,7 @@ This is where the Node.js comes in handy!  The [keypress module for Node.js](htt
 
 In this section you learned how you can exploit the Node.js ecosystem to add extra functionality to your Johnny-Five project.
 
-You should by now be familar with Johnny-Five code, but there are a couple of Node specific addition to the code that we can review here:
+You should by now be familar with Johnny-Five code, but there are a couple of Node specific additions to the code that we can review here:
 
 * `keypress(process.stdin);` Node's global object "process" has two properties called ".stdin" and ".stdout", which are essentially streams. You can write things into the stdout and listen to the 'data' event in the stdin stream.  Here we are setting up keypress to monitor ".stdin".  
 * `process.stdin.resume();` Initializes the stdin reading process.
