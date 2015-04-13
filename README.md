@@ -8,6 +8,21 @@ Note that [solutions to all exercises can be found here](https://github.com/mark
 
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
+## Requirements
+
+This workshop is setup to require a minimum amount of hardware:
+* A Mac, Linux or Windows machine with Node.js and the Arduino IDE installed (see [exercise one](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/01_installation_and_setup.md)).
+* 1 x Arduino UNO, flashed with Firmata (see [exercise two](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/02_simple_led_blink.md)).
+* 1 x type 2 USB Cable.
+* 1 x Breadboard.
+* 1 x Potentiometer.
+* 1 x Button.
+* 1 x Servo.
+* 1 x 5mm LED.
+* 1 x 330 ohm resistor (orange-orange-brown).
+* 1 x 10k ohm resistor (brown-black-orange).
+* Male-Male Jumper Leads.
+
 ## Exercises
 
 #### [1. Installation and Setup](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/01_installation_and_setup.md)
