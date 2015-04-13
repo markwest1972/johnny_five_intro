@@ -71,7 +71,7 @@ Now you are finally ready to interact with your Arduino UNO!
 4. Make sure your Arduino UNO is connected to your PC.
 5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 02_simple_led_blink.js".  This will cause the LED next to Pin 13 on the Arduino UNO to blink at intervals of 500 milliseconds.
 5. To kill the process use Control C (on the Mac).
-6. Change the argument to the _myLed.blink_ statement and run the example again.
+6. The number supplied to the _myLed.blink_ statement is the amount of milliseconds between each time the LED switches on and off.   Change this argument to 2000 and run the example again.
 
 ## Learning Summary ##
 
@@ -80,4 +80,4 @@ In this section you setup up the Arduino UNO to work with Johnny-Five via the Fi
 Arguably the most important part of this exercise is the introduction to the Johnny-Five DSL.  In ths example the code did the following:
 * Imported the Johnny-Five module.
 * Set up the Arduino UNO Board and waited for the Board to return a "ready" event before continuing.
-* Instantiated the LED Object (the LED connected to Pin 13 on the Arduino UNO) and provided methods for interacting with it.
+* Instantiated the LED Object (the LED mark with L closest to Pin 13 on the Arduino UNO) and provided methods for interacting with it.
