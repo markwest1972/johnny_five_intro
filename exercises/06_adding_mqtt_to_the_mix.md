@@ -132,7 +132,7 @@ You will now set up a Johnny-Five controller with a connection to an Public MQTT
         }
 
 3. Change the _publishTopic_ and _subscribeTopic_ to be unique (in the example I've added my initials to the topic names).  This is to avoid problems when more than one person is taking this workshop at once.
-4. Save the file. 
+4. Save the file.
 5. Make sure your Arduino UNO is connected to your PC.
 6. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 06_adding_mqtt_to_the_mix.js".
 
@@ -154,3 +154,17 @@ The next step is to communicate with our Johnny-Five instance using a web based 
 5. You should see your actuators reacting to the commands, and a response showing up in your web based MQTT Client.
 
 ## Learning Summary ##
+
+This example was also about introducing you to MQTT and showing how easy it is to add MQTT to your Johnny-Five code.  Creating an MQTT Client with publish and subscribe capabilities required the following code:
+
+        var options = { host: "test.mosca.io", port: "1883" };
+
+        var client  = mqtt.connect(options);
+        client.on('connect', function () {
+           client.subscribe(subscribeTopic);
+        });
+
+        client.on('message', function (topic, payload) { ... }
+        client.publish(publishTopic, message);
+
+ By implementing a Pub/Sub messaging model MQTT allows you to disseminate events to multiple subscribers, or listen for events on multiple publishers.  Adding your circuit to the internet of things is childs play. 
