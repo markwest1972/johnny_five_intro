@@ -33,8 +33,8 @@ We'll explain more about this in the learning summary.
 
 #### Step 2 : Running the Code ####
 
-1. Create a new file called "04_potentiometer_led_and_servo.js"in your *johnny_five_intro root directory*.
-2. Populate this new file with the following Javascript code:
+1. 1. Create a new Javascript source file (with a .js suffix) in your *johnny_five_intro root directory*.
+2. Populate this file with the following Javascript code:
 
         var five = require("johnny-five");
         var myBoard, myServo, myPotentiometer;
@@ -63,7 +63,7 @@ We'll explain more about this in the learning summary.
          });
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
-5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 04_potentiometer_led_and_servo.js".
+5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node <<source_file_name>>.js".
 6. Twiddle the Potentiometer back and forth.  The Servo should move to reflect the Potentiometer's position and the LED should brighten and dim.
 7. To kill the process use Control C (on the Mac).
 
@@ -71,7 +71,7 @@ We'll explain more about this in the learning summary.
 
 Once again we added the actuators (in this case the LED and Servo) to the Johnny-Five REPL.  You can play with these by trying the following:
 
-1. Run your "04_potentiometer_led_and_servo.js" file as specified in Step 2.
+1. Run your Javascript source file as specified in Step 2.
 2. Once the Node.js process is running, wait for the "Repl Initialized" message.
 3. Try sweeping the Servo from the command line by using `replServo.sweep()`.  Stop the Servo by using `replServo.stop()`.  Centre the Servo by using `replServo.center()`.
 4. Take a look at the [Johnny-Five documentation for the Servo class](https://github.com/rwaldron/johnny-five/wiki/Servo).  Here you'll find plenty of methods for controlling the Servo.

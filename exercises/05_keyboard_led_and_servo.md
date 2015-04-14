@@ -35,8 +35,8 @@ This is where the Node.js comes in handy!  The [keypress module for Node.js](htt
 
 #### Step 3 : Running the Code ####
 
-1. Create a new file called "04_potentiometer_led_and_servo.js"in your *johnny_five_intro root directory*.
-2. Populate this new file with the following Javascript code:
+1. Create a new Javascript source file in your *johnny_five_intro root directory*.
+2. Populate new file with the following Javascript code:
 
         var five = require("johnny-five");
         var keypress = require("keypress");
@@ -117,7 +117,7 @@ This is where the Node.js comes in handy!  The [keypress module for Node.js](htt
 
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
-5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 05_keyboard_led_and_servo.js".
+5. In the command prompt, navigate to your *johnny_five_intro root directory* and run your file using the "node" command.  See previous exercises if you are not sure how to do this.
 6. Use the "up" and "down" arrow keys to control the brightness of the LED.  Use the "left" and "right" arrowkeys to move the Servo left and right.  Finally use the "pace bar to centre the Servo.
 7. To kill the process use Control C (on the Mac).
 

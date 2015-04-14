@@ -39,8 +39,7 @@ Once again the Node.js ecosystem makes it easy to add MQTT to your project, than
 
 You will now set up a Johnny-Five controller with a connection to an Public MQTT Broker.
 
-1. Create a new file called "06_adding_mqtt_to_the_mix.js" in your *johnny_five_intro root directory*.
-2. Populate this new file with the following Javascript code:
+1. Create a new Javascript source file containing the following Javascript code:
 
         var five = require("johnny-five");
         var mqtt = require("mqtt");
@@ -134,7 +133,7 @@ You will now set up a Johnny-Five controller with a connection to an Public MQTT
 3. Change the _publishTopic_ and _subscribeTopic_ to be unique (in the example I've added my initials to the topic names).  This is to avoid problems when more than one person is taking this workshop at once.
 4. Save the file.
 5. Make sure your Arduino UNO is connected to your PC.
-6. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 06_adding_mqtt_to_the_mix.js".
+6. In the command prompt, navigate to your *johnny_five_intro root directory* and run your Javascript source file using the "node" command.
 
 We've now set up Johnny-Five so it can communicate with the Public MQTT server at "test.mosca.io". Note that we are using the standard MQTT port : 1883.
 
@@ -142,7 +141,7 @@ We've now set up Johnny-Five so it can communicate with the Public MQTT server a
 
 The next step is to communicate with our Johnny-Five instance using a web based MQTT client.  Luckily we don't have to create one ourselves and there is one available at http://www.hivemq.com/demos/websocket-client.  To use this we need to do the following:
 
-1. First we need to connect to public MQTT server.  Use "test.mosca.io" as the host name and "80" for the port (this client is using Websockets to connect to the MQTT server, which is why the port is different from the one Johnny-Five is using).
+1. First we need to connect to public MQTT server.  Use "test.mosca.io" as the host name and "80" for the port (the web based MQTT client is using Websockets to connect to the MQTT server, which is why the port is different from the one Johnny-Five is using).
 2. Click the "Connect" button.
 3. Set up a subscription to the topic Johnny-Five will publish to (the "publishTopic" you specified in the Johnny-Five code).
 4. Finally publish one of the following commands to the topic Johnny-Five is listening to (the "subscribeTopic" you specified in the Johnny-Five code):
@@ -168,4 +167,4 @@ This example was also about introducing you to MQTT and showing how easy it is t
         client.on('message', function (topic, payload) { ... }
         client.publish(publishTopic, message);
 
- By implementing a Pub/Sub messaging model MQTT allows you to disseminate events to multiple subscribers, or listen for events on multiple publishers.  Adding your circuit to the internet of things is childs play. 
+ By implementing a Pub/Sub messaging model MQTT allows you to disseminate events to multiple subscribers, or listen for events on multiple publishers.  Adding your circuit to the internet of things is childs play.

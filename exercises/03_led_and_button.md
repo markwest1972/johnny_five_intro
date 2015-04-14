@@ -30,8 +30,8 @@ Note the usage of resistors in this circuit:
 
 #### Step 2 : Running the Code ####
 
-1. Create a new file called "03_led_and_button.js" in your *johnny_five_intro root directory*.
-2. Populate this new file with the following Javascript code:
+1. Create a new Javascript source file (with a .js suffix) in your *johnny_five_intro root directory*.
+2. Populate this file with the following Javascript code:
 
         var five = require("johnny-five");
         var myBoard, myLed, myButton;
@@ -59,7 +59,7 @@ Note the usage of resistors in this circuit:
         });
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
-5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node 03_led_and_button.js".
+5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node <<source_file_name>>.js".
 6. Experiment with switching the LED on and off with the Button.  Hold the Button down and the light becomes brighter.  Release the Button and the light fades.  The brightening and dimming of the light is controlled by the LED class's fadeIn() and fadeOut() methods.  
 7. To kill the process use Control C (on the Mac).
 
@@ -67,7 +67,7 @@ Note the usage of resistors in this circuit:
 
 Let's take another look at the code you just ran, specifically the `this.repl.inject([...])` code block.  Here you added the LED in your circuit to Johnny-Five's REPL.  This allows you to control the LED directly from the command line.  Lets try this out now!
 
-1. Run your "03_led_and_button.js" file as specified in Step 2.
+1. Run your Javascript source file as specified in Step 2.
 2. Once the Node.js process is running, wait for the "Repl Initialized" message.
 3. Try switching the LED on and off from the command line by using `replLed.toggle()`.
 4. Take a look at the [Johnny-Five documentation for the LED class](https://github.com/rwaldron/johnny-five/wiki/Led).  Here you'll find plenty of methods for controlling the LED.  Try some of these out!
