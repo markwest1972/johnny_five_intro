@@ -13,10 +13,9 @@ myBoard.on("ready", function() {
     freq: 250
   });
 
-  myPotentiometer.on("read", function() {
-    var rawValue = this.raw;
-    myLed.brightness(Math.floor(rawValue / 4));
-    myServo.to(five.Fn.map(rawValue, 0, 1023, 0, 179));
+  myPotentiometer.scale(0, 180).on("data", function() {
+    myLed.brightness(Math.floor(this.raw / 4));
+    myServo.to(this.scaled);
   });
 
   myBoard.repl.inject({
