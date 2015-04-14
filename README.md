@@ -8,6 +8,8 @@ Note that [solutions to all exercises can be found here](https://github.com/mark
 
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
+![Johnny-Five setup](https://github.com/markwest1972/johnny_five_intro/blob/master/assets/Johnny-Five%20set%20up.png)
+
 ## Requirements
 
 This workshop is setup to require a minimum amount of hardware:
