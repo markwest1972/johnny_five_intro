@@ -11,7 +11,7 @@ In this exercise you will install Node.js, the Arduino IDE and optionally the At
 
 ## Steps ##
 
-#### Step 1 : Install node.js ####
+#### Step 1 : Install Node.js ####
 
 [Download the latest version of Node.js](https://nodejs.org) and install it on your machine.  
 
