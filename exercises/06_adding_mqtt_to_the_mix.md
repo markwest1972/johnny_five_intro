@@ -1,4 +1,4 @@
-# Exercise Five : Keyboard, LED and Servo #
+# Exercise Six : Adding MQTT to the Mix #
 
 ## Summary ##
 
