@@ -38,6 +38,8 @@ To make it easy for you to clean up after this workshop we'll install all the no
  3. You will now be asked to specify parameters for your project.  These will be used to create a "package.json" file for your project.  You can choose whether or not you want to specify these, or accept the defaults.
  4. Once you've entered all parameters you'll be presented with the contents of your package.json file and asked whether or not you wish to accept these.  Type "y" or "yes" to accept them and create the file.
 
+Running `npm init` again will allow you to update the file, or you can choose to use a text editor.
+
 Your *johnny_five_intro root directory* will now contain a file called "package.json".  Note that for the purposes of this workshop we won't be actively using this file, but you should be aware of it if you wish to create your own Node.js / Johnny-Five projects.
 
 Now you can install Johnny-Five:
