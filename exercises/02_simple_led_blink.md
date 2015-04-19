@@ -32,7 +32,7 @@ Having problems?  You may need to adjust one of the following before trying the 
 
 The Node.js installation from exercise one includes the [npm package manager](https://www.npmjs.com).  This can be used to download and install node modules such as Johnny-Five. Modules can be installed both globally (for all Node.js processes on your PC) and locally (for specific Node.js applications).
 
-Before you install Johnny-Five you'll need to create a "package.json" file:
+To make it easy for you to clean up after this workshop we'll install all the node modules required for this workshop locally.  To do this we'll need to create a "package.json" file:
  1. Create a directory for all your Johnny-Five examples.  We'll call this your *johnny_five_intro root directory* from now on.
  2. From the command prompt, navigate to your *johnny_five_intro root directory* and run the command `npm init`.
  3. You will now be asked to specify parameters for your project.  These will be used to create a "package.json" file for your project.  You can choose whether or not you want to specify these, or accept the defaults.
