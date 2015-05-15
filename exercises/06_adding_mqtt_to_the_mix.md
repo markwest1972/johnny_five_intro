@@ -153,6 +153,8 @@ The next step is to communicate with our Johnny-Five instance using a web based 
 5. You should see your actuators reacting to the commands, and a response showing up in your web based MQTT Client.
 6. If you don't like these commands, or want to have seperate communication topics for the LED and Servo, feel free to update the code to reflect this!
 
+![MQTT Flow](https://github.com/markwest1972/johnny_five_intro/blob/master/fritzings/mqtt_flow.png)
+
 ## Learning Summary ##
 
 This example was also about introducing you to MQTT and showing how easy it is to add MQTT to your Johnny-Five code.  Creating an MQTT Client with publish and subscribe capabilities required the following code:
