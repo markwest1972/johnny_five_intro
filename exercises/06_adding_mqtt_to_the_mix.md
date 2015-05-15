@@ -130,7 +130,7 @@ You will now set up a Johnny-Five controller with a connection to an Public MQTT
           return adjustment;
         }
 
-3. Change the _publishTopic_ and _subscribeTopic_ to be unique (in the example I've added my initials to the topic names).  This is to avoid problems when more than one person is taking this workshop at once.
+3. Change the _publishTopic_ and _subscribeTopic_ to be unique (add your initials as a suffix to the topic names).  Otherwise you might end up controlling someone elses Arduino!
 4. Save the file.
 5. Make sure your Arduino UNO is connected to your PC.
 6. In the command prompt, navigate to your *johnny_five_intro root directory* and run your Javascript source file using the "node" command.
