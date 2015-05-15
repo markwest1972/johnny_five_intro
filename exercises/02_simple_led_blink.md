@@ -24,7 +24,7 @@ To install Firmata onto your Arduino UNO:
 
 Having problems?  You may need to adjust one of the following before trying the upload process one more time:
 * Select : _Tools > Board_ and ensure that "Arduino UNO" is selected.
-* Select : _Tools > Serial Port_ and select another serial port.  The correct port will probably look something like  "/dev/tty.usbmodem:1411".
+* Select : _Tools > Serial Port_ and select another serial port.  The correct port will probably look something like  "/dev/tty.usbmodem:1411" or "/dev/cu.usbmodem:1411".
 * Check the USB Cable is connected - consider also trying a different cable.
 * You can also try pressing the Reset Button on the UNO.
 
