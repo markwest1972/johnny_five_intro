@@ -45,8 +45,8 @@ You will now set up a Johnny-Five controller with a connection to an Public MQTT
         var mqtt = require("mqtt");
         var myBoard, myServo, myLed;
         var brightness = 0;
-        var subscribeTopic = 'command_from_mwe';
-        var publishTopic = 'response_to_mwe';
+        var commandTopic = 'command_from_client';
+        var responseTopic = 'response_to_client';
 
         myBoard = new five.Board();
         myBoard.on("ready", function() {
@@ -63,7 +63,7 @@ You will now set up a Johnny-Five controller with a connection to an Public MQTT
 
            var client  = mqtt.connect(options);
            client.on('connect', function () {
-             client.subscribe(subscribeTopic);
+             client.subscribe(commandTopic);
            });
 
            client.on('message', function (topic, payload) {
@@ -74,27 +74,27 @@ You will now set up a Johnny-Five controller with a connection to an Public MQTT
 
               if ( message === 'left' )  {
                 myServo.step(validateServoMove(10, myServo.position));
-                client.publish(publishTopic, 'Servo angle ['+myServo.position+']');
+                client.publish(responseTopic, 'Servo angle ['+myServo.position+']');
               }
 
               if ( message === 'right' ) {
                 myServo.step(validateServoMove(-10, myServo.position));
-                client.publish(publishTopic, 'Servo angle ['+myServo.position+']');
+                client.publish(responseTopic, 'Servo angle ['+myServo.position+']');
               }
 
               if ( message === 'centre' ) {
                 myServo.center();
-                client.publish(publishTopic, 'Servo angle ['+myServo.position+']');
+                client.publish(responseTopic, 'Servo angle ['+myServo.position+']');
               }
 
               if ( message === 'brighter' ) {
                 validateAndAdjustLedBrightness(20);
-                client.publish(publishTopic, 'LED brightness ['+brightness+']');
+                client.publish(responseTopic, 'LED brightness ['+brightness+']');
               }
 
               if ( message === 'dimmer' ) {
                 validateAndAdjustLedBrightness(-20);
-                client.publish(publishTopic, 'LED brightness ['+brightness+']');
+                client.publish(responseTopic, 'LED brightness ['+brightness+']');
               }
            });
         });
