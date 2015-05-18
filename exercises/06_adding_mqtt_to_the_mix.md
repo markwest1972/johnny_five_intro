@@ -4,7 +4,7 @@
 
 [MQ Telemetry Transport](http://mqtt.org) is a publish/subscribe messaging protocol, designed for constrained devices and low-bandwidth, high-latency or unreliable networks.  Due to it's small footprint it is quickly becoming the de-facto messaging standard for the Internet of Things,
 
-In this exercise we'll wire up our Johnny-Five LED and Servo example to a Public MQTT Broker.  We'll then be able use any MQTT Client to communicate with our circuit.  For simplicitys sake we'll use the [Hive MQ Web Browser MQTT CLient](http://www.hivemq.com/demos/websocket-client/), although you are welcome to write your own client if you wish!
+In this exercise we'll wire up our Johnny-Five LED and Servo example to a Public MQTT Broker.  We'll then be able use any MQTT Client to communicate with our circuit.  For simplicitys sake we'll use the [Hive MQ Web Browser MQTT Client](http://www.hivemq.com/demos/websocket-client/), although you are welcome to write your own client if you wish!
 
 ## Requirements ##
 
