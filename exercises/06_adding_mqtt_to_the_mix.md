@@ -135,13 +135,13 @@ You will now set up a Johnny-Five controller with a connection to an Public MQTT
 5. Make sure your Arduino UNO is connected to your PC.
 6. In the command prompt, navigate to your *johnny_five_intro root directory* and run your Javascript source file using the "node" command.
 
-We've now set up Johnny-Five so it can communicate with the Public MQTT server at "test.mosca.io". Note that we are using the standard MQTT port : 1883.
+We've now set up our Node / Johnny-Five process to communicate with the Public MQTT server at "test.mosca.io". Note that we are using the standard MQTT port - "1883".
 
 #### Step 4 : Using the Hive MQ Web Browser MQTT Client to send commands to the Johnny-Five Controller ####
 
 The next step is to communicate with our Johnny-Five instance using a web based MQTT client.  Luckily we don't have to create one ourselves and there is one available at http://www.hivemq.com/demos/websocket-client.  To use this we need to do the following:
 
-1. First we need to connect to public MQTT server.  Use "test.mosca.io" as the host name and "80" for the port (the web based MQTT client is using Websockets to connect to the MQTT server, which is why the port is different from the one Johnny-Five is using).
+1. First we need to connect to public MQTT server.  Use "test.mosca.io" as the host name and "80" for the port (the web based MQTT client is using Websockets to connect to the MQTT server, which is why the port is different from the one our Node / Johnny-Five process is using).
 2. Click the "Connect" button.
 3. Set up a subscription to the topic Johnny-Five will publish to (the "publishTopic" you specified in the Johnny-Five code).
 4. Finally publish one of the following commands to the topic Johnny-Five is listening to (the "subscribeTopic" you specified in the Johnny-Five code):
