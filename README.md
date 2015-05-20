@@ -29,7 +29,7 @@ This workshop is setup to require a minimum amount of hardware:
 
 #### [1. Installation and Setup](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/01_installation_and_setup.md)
 
-In this first exercise you will install node.js, the Arduino IDE and optionally the Atom text editor.
+In this first exercise you will install Node.js, the Arduino IDE and optionally the Atom text editor.
 
 #### [2. Simple LED Blink](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/02_simple_led_blink.md)
 
