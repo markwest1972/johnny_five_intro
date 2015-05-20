@@ -70,7 +70,7 @@ Let's take another look at the code you just ran, specifically the `this.repl.in
 1. Run your Javascript source file as specified in Step 2.
 2. Once the Node.js process is running, wait for the "Repl Initialized" message.
 3. Try switching the LED on and off from the command line by using `replLed.toggle()`.
-4. Take a look at the [Johnny-Five documentation for the LED class](https://github.com/rwaldron/johnny-five/wiki/Led).  Here you'll find plenty of methods for controlling the LED.  Try some of these out!
+4. Take a look at the [Johnny-Five documentation for the LED class](http://johnny-five.io/api/led/).  Here you'll find plenty of methods for controlling the LED.  Try some of these out!
 5. To kill the process use Control C (on the Mac).
 
 ## Learning Summary ##
