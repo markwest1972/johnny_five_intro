@@ -74,7 +74,7 @@ Once again we added the actuators (in this case the LED and Servo) to the Johnny
 1. Run your Javascript source file as specified in Step 2.
 2. Once the Node.js process is running, wait for the "Repl Initialized" message.
 3. Try sweeping the Servo from the command line by using `replServo.sweep()`.  Stop the Servo by using `replServo.stop()`.  Centre the Servo by using `replServo.center()`.
-4. Take a look at the [Johnny-Five documentation for the Servo class](https://github.com/rwaldron/johnny-five/wiki/Servo).  Here you'll find plenty of methods for controlling the Servo.
+4. Take a look at the [Johnny-Five documentation for the Servo class](http://johnny-five.io/api/servo/).  Here you'll find plenty of methods for controlling the Servo.
 5. To kill the process use Control C (on the Mac).
 
 ## Learning Summary ##
