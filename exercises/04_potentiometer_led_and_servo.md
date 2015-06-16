@@ -63,7 +63,7 @@ We'll explain more about this in the learning summary.
          });
 3. Save the file.
 4. Make sure your Arduino UNO is connected to your PC.
-5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node <<source_file_name>>.js".
+5. In the command prompt, navigate to your *johnny_five_intro root directory* and run the command "node source_file_name.js".
 6. Twiddle the Potentiometer back and forth.  The Servo should move to reflect the Potentiometer's position and the LED should brighten and dim.
 7. To kill the process use Control C (on the Mac).
 
