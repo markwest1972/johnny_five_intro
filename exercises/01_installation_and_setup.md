@@ -13,7 +13,7 @@ In this exercise you will install Node.js, the Arduino IDE and optionally the At
 
 #### Step 1 : Install Node.js ####
 
-[Download the latest version of Node.js](https://nodejs.org) and install it on your machine.  Alternatively use a packaginge tool such as homebrew or apt-get.
+[Download the latest version of Node.js](https://nodejs.org) and install it on your machine.  Alternatively [use a package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
 
 If you are feeling adventurous you could instead download io.js, which is a fork of Node.js.  At the time of writing I haven't tested io.js with Johnny-Five, so I cannot guarantee that this will work.
 
