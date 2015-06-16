@@ -34,4 +34,6 @@ If you'd like to try it out, you can download it from the [Atom Website](https:/
 
 If you have another editor or IDE that you prefer then you can skip this step.
 
------
+---
+
+<div class="align-center">Centered text</div>
