@@ -33,3 +33,5 @@ The Atom Text Editor is a free and hackable text editor that works well for edit
 If you'd like to try it out, you can download it from the [Atom Website](https://atom.io).
 
 If you have another editor or IDE that you prefer then you can skip this step.
+
+##### [Forwards to Exercise Two](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/02_simple_led_blink.md)
