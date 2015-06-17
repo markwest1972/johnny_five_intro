@@ -2,6 +2,8 @@
 
 This is a set of exercises for a 2-3 hour workshop I will be running in Spring/Summer 2015.  The workshop is aimed at introducing attendees to Arduino, Johnny-Five, Node.js and Javascript.
 
+In this workshop we will use the Arduino UNO, but Johnny-Five supports a range of platforms.  [Check out the Johnny-Five pages to find out more](http://johnny-five.io).
+
 The exercises revolve mainly about using different types of sensors (input) to control different types of actuators (output).  The last exercise involves using a public MQTT broker for communication between different Johnny-Five processes.
 
 Note that [code for all exercises can be found here](https://github.com/markwest1972/johnny_five_intro/tree/master/solutions).
