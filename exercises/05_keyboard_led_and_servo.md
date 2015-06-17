@@ -131,3 +131,5 @@ You should by now be familar with Johnny-Five code, but there are a couple of No
 * `process.stdin.resume();` Initializes the stdin reading process.
 * `process.stdin.setEncoding("utf8");` Set character encoding.  
 * `process.stdin.setRawMode(true);` Fire events per keypress, not on carriage return.
+
+###[Onwards to Exercise 6!](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/06_adding_mqtt_to_the_mix.md)###
