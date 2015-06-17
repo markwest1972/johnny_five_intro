@@ -35,8 +35,8 @@ The Node.js installation from exercise one includes the [npm package manager](ht
 To make it easy for you to clean up after this workshop we'll install all the node modules required for this workshop locally.  To do this we'll need to create a "package.json" file:
  1. Create a directory for all your Johnny-Five examples.  We'll call this your *johnny_five_intro root directory* from now on.
  2. From the command prompt, navigate to your *johnny_five_intro root directory* and run the command `npm init`.
- 3. You will now be asked to specify parameters for your project.  These will be used to create a "package.json" file for your project.  You can choose whether or not you want to specify these, or accept the defaults.
- 4. Once you've entered all parameters you'll be presented with the contents of your package.json file and asked whether or not you wish to accept these.  Type "y" or "yes" to accept them and create the file.
+ 3. You will now be asked to specify parameters for your project.  These will be used to create a "package.json" file for your project.  Hit "Enter" to accept the defaults.
+ 4. Once you've entered all parameters you'll be presented with the contents of your package.json file and asked whether or not you wish to accept these.  Hit "Enter" to accept them and create the file.
 
 Running `npm init` again will allow you to update the file, or you can choose to use a text editor.
 
