@@ -171,4 +171,4 @@ This example was also about introducing you to MQTT and showing how easy it is t
 
  By implementing a Pub/Sub messaging model MQTT allows you to disseminate events to multiple subscribers, or listen for events on multiple publishers.  Adding your circuit to the internet of things is childs play.
 
-###(Back to the start!)[https://github.com/markwest1972/johnny_five_intro]###
+###[Back to the start!](https://github.com/markwest1972/johnny_five_intro)###
