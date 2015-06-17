@@ -14,6 +14,8 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 ![Johnny-Five setup](https://github.com/markwest1972/johnny_five_intro/blob/master/assets/Johnny-Five%20set%20up.png)
 
+Johnny-Five can also connect over Bluetooth and WIFI, but this requires extra equipment.  To keep things cheap and simple, we'll use a serial cable for this workshop.
+
 ## Requirements
 
 This workshop is setup to require a minimum amount of hardware:
