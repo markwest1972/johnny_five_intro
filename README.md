@@ -10,6 +10,8 @@ Note that [code for all exercises can be found here](https://github.com/markwest
 
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
+## How Johnny-Five works
+
 ![Johnny-Five setup](https://github.com/markwest1972/johnny_five_intro/blob/master/assets/Johnny-Five%20set%20up.png)
 
 ## Requirements
