@@ -4,7 +4,7 @@ This is a set of exercises for a 2-3 hour workshop I will be running in Spring/S
 
 The exercises revolve mainly about using different types of sensors (input) to control different types of actuators (output).  The last exercise involves using a public MQTT broker for communication between different Johnny-Five processes.
 
-Note that [solutions to all exercises can be found here](https://github.com/markwest1972/johnny_five_intro/tree/master/solutions).
+Note that [code for all exercises can be found here](https://github.com/markwest1972/johnny_five_intro/tree/master/solutions).
 
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
