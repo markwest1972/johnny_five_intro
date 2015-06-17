@@ -63,7 +63,7 @@ Note the usage of resistors in this circuit:
 6. Experiment with switching the LED on and off with the Button.  Hold the Button down and the light becomes brighter.  Release the Button and the light fades.  The brightening and dimming of the light is controlled by the LED class's fadeIn() and fadeOut() methods.  
 7. To kill the process use Control C (on the Mac).
 
-*Note that a common problem is that the LED is the wrong way round.  If you're LED isn't working, try flipping it.*
+*Note that a common problem is that the LED placed the wrong way round.  If your LED isn't working, try flipping it.*
 
 #### Step 3 : Experimenting with the REPL ####
 
