@@ -34,4 +34,4 @@ The Atom Text Editor is a free and hackable text editor that works well for edit
 
 If you'd like to try it out, you can download it from the [Atom Website](https://atom.io).
 
-If you have another editor or IDE that you prefer then you can skip this step.
+If you have another editor or IDE that you prefer then you can skip this step.  You'll be mainly using copy and paste in this workshop, so you don't need anything powerful.
