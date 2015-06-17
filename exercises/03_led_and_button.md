@@ -63,6 +63,8 @@ Note the usage of resistors in this circuit:
 6. Experiment with switching the LED on and off with the Button.  Hold the Button down and the light becomes brighter.  Release the Button and the light fades.  The brightening and dimming of the light is controlled by the LED class's fadeIn() and fadeOut() methods.  
 7. To kill the process use Control C (on the Mac).
 
+###### Troubleshooting - if nothing works, try flipping the LED around ######
+
 #### Step 3 : Experimenting with the REPL ####
 
 Let's take another look at the code you just ran, specifically the `this.repl.inject([...])` code block.  Here you added the LED in your circuit to Johnny-Five's REPL.  This allows you to control the LED directly from the command line.  Lets try this out now!
