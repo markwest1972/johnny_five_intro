@@ -36,4 +36,4 @@ If you'd like to try it out, you can download it from the [Atom Website](https:/
 
 If you have another editor or IDE that you prefer then you can skip this step.  You'll be mainly using copy and paste in this workshop, so you don't need anything powerful.
 
-###[Onwards to Exercise 2](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/02_simple_led_blink.md)!####
+###[Onwards to Exercise 2!](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/02_simple_led_blink.md)####
