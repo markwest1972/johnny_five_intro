@@ -88,3 +88,5 @@ In this example the code did the following:
  * Instantiated the Button Object (connected to Pin 11 on the Arduino UNO).
  * On events from the Button (press and release), triggered the fadeIn and fadeOut commands on the LED.
  * Added the LED to the Johnny-Five REPL.
+
+###[Onwards to Exercise 4!](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/04_potentiometer_led_and_servo.md)####
