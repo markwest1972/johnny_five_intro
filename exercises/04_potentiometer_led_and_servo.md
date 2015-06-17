@@ -94,3 +94,5 @@ In this example the code did the following:
     * ..the LED was brightened or dimmed accordingly.  
     * ..the 10 bit input value (provided by the Potentiometer) was mapped to the range of movement supported by the Servo (180 degrees) and the Servo was moved to reflect this.
 * Finally the code added the Servo and LED to the Johnny-Five REPL.
+
+###[Onwards to Exercise 5!](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/05_keyboard_led_and_servo.md)####
