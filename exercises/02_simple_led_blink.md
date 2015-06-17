@@ -84,3 +84,5 @@ Arguably the most important part of this exercise is the introduction to the Joh
 * Imported the Johnny-Five module.
 * Set up the Arduino UNO Board and waited for the Board to return a "ready" event before continuing.
 * Instantiated the LED Object (the LED mark with L closest to Pin 13 on the Arduino UNO) and provided methods for interacting with it.
+
+###[Onwards to Exercise 3!](https://github.com/markwest1972/johnny_five_intro/blob/master/exercises/03_led_and_button.md)####
