@@ -19,7 +19,7 @@ If you are feeling adventurous you could instead download io.js, which is a fork
 
 To validate you Node.js install try the entering `node --version` at your command line. 
 
-The Node.js installation includes npm, which is nodes [package manager](https://en.wikipedia.org/wiki/Package_manager).  You should run `npm --version` at your command line to validate this as well.
+The Node.js installation includes *npm*, which is nodes [package manager](https://en.wikipedia.org/wiki/Package_manager).  You should run `npm --version` at your command line to validate this as well.
 
 #### Step 2 : Install the Arduino IDE ####
 
